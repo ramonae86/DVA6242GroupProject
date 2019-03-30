@@ -1,6 +1,7 @@
 import pandas as pd
 from math import cos, asin, sqrt
 
+effective_radius = 3
 
 def get_distance(lat1, lon1, lat2, lon2):
     p = 0.017453292519943295     #Pi/180
@@ -9,10 +10,10 @@ def get_distance(lat1, lon1, lat2, lon2):
 
 
 def get_bus_weight(distance):
-    if distance >= 3:
+    if distance >= effective_radius:
         return 0
     else:
-        return (-1/3 * distance + 1)
+        return (-1/effective_radius * distance + 1)
 
 
 def get_score(coordinate):
