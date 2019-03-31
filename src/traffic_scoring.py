@@ -36,12 +36,18 @@ def get_subway_score(coordinate):
     return score
 
 
+def get_traffic_score(coordinates):
+    score = []
+    for coordinate in coordinates:
+        single_score = 0.5 * get_bus_score(coordinate) + 0.5 * get_subway_score(coordinate)
+        score.append(single_score)
+    return score
+
+
 def main():
     coordinates = [(40.688453, -73.986503), (40.748760, -74.005323), (40.806264, -73.950991)]
     # coordinates = [[40.7489182, -73.9862724]]
-    for coordinate in coordinates:
-        print(get_bus_score(coordinate))
-        print(get_subway_score(coordinate))
+    print(get_traffic_score(coordinates))
 
 
 if __name__ == "__main__":
