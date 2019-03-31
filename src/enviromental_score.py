@@ -35,7 +35,7 @@ def distance(origin, destination):
          math.cos(math.radians(lat1)) * math.cos(math.radians(lat2)) *
          math.sin(dlon / 2) * math.sin(dlon / 2))
     c = 2 * math.atan2(math.sqrt(a), math.sqrt(1 - a))
-    d = radius * c * 0.621371
+    d = radius * c
 
     return d
 
@@ -96,18 +96,24 @@ def environmental_score(loc_list, di):
     tree_max = max(list_tree_count)
     rat_max = max(list_rat_count)
 
-    score = []
+    score_rel = []
     for i in range(len(list_tree_count)):
-        temp = 0.5 * list_tree_count[i] / tree_max + 0.5 * list_rat_count[i] / rat_max
+        temp = 0.5 * list_tree_count[i] / tree_max + 0.5 * (1 - list_rat_count[i] / rat_max)
+        score_rel.append(temp)
+
+    # normalization
+    score = []
+    score_rel_max = max(score_rel)
+
+    for item in score_rel:
+        temp = item / score_rel_max
         score.append(temp)
 
     return score
 
+location_list = [(40.688453, -73.986503), (40.748760, -74.005323), (40.806264, -73.950991)]
 
-
-location_list = [(40.77004563, -73.98494997), (40.76313613, -73.96077693), (40.639637, -73.95696074)]
-
-score = environmental_score(loc_list = location_list, di = 5)
+score = environmental_score(loc_list = location_list, di = 10)
 print(score)
 
 
