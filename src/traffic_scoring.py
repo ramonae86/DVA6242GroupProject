@@ -41,7 +41,8 @@ def get_traffic_score(coordinates):
     for coordinate in coordinates:
         single_score = 0.5 * get_bus_score(coordinate) + 0.5 * get_subway_score(coordinate)
         score.append(single_score)
-    return score
+    result = [i*(1/max(score)) for i in score]
+    return result
 
 
 def main():
