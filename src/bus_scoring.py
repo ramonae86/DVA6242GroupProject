@@ -25,11 +25,6 @@ def get_score(coordinate):
         weight = get_bus_weight(distance)
         score = max(score, weight)
 
-    # subway_data = pd.read_csv("../data/CleanSubway.csv")
-    # for index, row in subway_data.iterrows():
-    #     distance = get_distance(coordinate[0], coordinate[1], row['latitude'], row['longitude'])
-    #     weight = get_subway_weight(distance) * row['stop_weight']
-    #     sum += weight
 
     return score
 
