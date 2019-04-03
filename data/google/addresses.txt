@@ -1,6 +1,0 @@
-work: 
-525 Broadway, New York, NY 10012
-home:   
-East 88th Street, New York, 
-East 50th Street, New York, 
-West 19th Street, New York
