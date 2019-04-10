@@ -1,3 +1,9 @@
+</php
+
+
+?>
+
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -27,14 +33,24 @@
 	     font-family: sans-serif;
 	     color:#FFF;
 	 }
+	 #filter p {
+	     background:#424242;
+	     line-height:40px;
+	     margin-left:30px;
+	     margin-top: 5px;
+	     margin-bottom: 5px;
+	 }
 	 #result_list {
 	     float: left;
 	     width: 25%;
 	 }
 	 #result_map {
 	     float: right;
+	     position: absolute;
+	     top: 150px;
+	     bottom: 0;
+	     right: 0;
 	     width: 75%;
-	     
 	 }
 	 .select {
 	     display:flex;
@@ -142,6 +158,12 @@
 	     opacity: 1;
 	     right: 0;
 	 }
+	 #result_list p {
+	     border: 2px;
+	     border-style: solid;
+	     border-radius: 5px;
+	     border-color: #3f3f3f;
+	 }
 	</style>
     </head>
     <body>
@@ -153,7 +175,7 @@
 
 
 	<div id="filter">
-	    <p style="background:#424242;line-height:40px;margin-left:30px;">traffic</p>
+	    <p>traffic&nbsp;</p>
 	    <div class="select" tabindex="1">
 		<input class="selectopt" name="traffic" type="radio" id="traffic1">
 		<label for="traffic1" class="option">1</label>
@@ -176,7 +198,7 @@
 		<input class="selectopt" name="traffic" type="radio" id="traffic10">
 		<label for="traffic10" class="option">10</label>
 	    </div>
-	    <p style="background:#424242;line-height:40px;margin-left:30px;">education</p>
+	    <p>education&nbsp;</p>
 	    <div class="select" tabindex="1">
 		<input class="selectopt" name="education" type="radio" id="education1">
 		<label for="education1" class="option">1</label>
@@ -199,7 +221,7 @@
 		<input class="selectopt" name="education" type="radio" id="education10" >
 		<label for="education10" class="option">10</label>
 	    </div>
-	    <p style="background:#424242;line-height:40px;margin-left:30px;">environment</p>
+	    <p>environment&nbsp;</p>
 	    <div class="select" tabindex="1">
 		<input class="selectopt" name="environment" type="radio" id="environment1">
 		<label for="environment1" class="option">1</label>
@@ -222,7 +244,7 @@
 		<input class="selectopt" name="environment" type="radio" id="environment10">
 		<label for="environment10" class="option">10</label>
 	    </div>
-	    <p style="background:#424242;line-height:40px;margin-left:30px;">safety</p>
+	    <p>safety&nbsp;</p>
 	    <div class="select" tabindex="1">
 		<input class="selectopt" name="safety" type="radio" id="safety1">
 		<label for="safety1" class="option">1</label>
@@ -249,11 +271,26 @@
 	</div>
 
 	<div id="result_list">
-	    list
+	    <p>apartment name</p>
+	    
+	    
+	</div>
+	
+	<div id="result_map">
+	    <script>
+	     function initMap() {
+		 var map;
+		 map = new google.maps.Map(document.getElementById('result_map'), {
+		     center: {lat: 40.723040, lng: -73.999180},
+		     zoom: 10
+		 });
+	     }
+	    </script>
+	    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAwrdvLk2XruYEsLwqpYwiqnaKbSwhHiiM&callback=initMap" async defer>
+	    </script>
 	</div>
 
-	<div id="result_map">
-	    map
-	</div>
+
+	
     </body>
 </html>
