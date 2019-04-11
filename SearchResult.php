@@ -58,7 +58,7 @@
 	     position:relative;
 	     width:200px;
 	     height:40px;
-	     
+	     cursor: pointer;
 	 }
 	 .option {
 	     padding:0 30px 0 10px;
@@ -129,40 +129,37 @@
 	     font-size: 16px;
 	     padding: 12px;
 	     width: 120px;
-	     transition: all 0.5s;
+	     transition: all 0.3s;
 	     cursor: pointer;
 	     margin-left: 20px;
 	 }
-
 	 .button span {
 	     cursor: pointer;
 	     display: inline-block;
 	     position: relative;
 	     transition: 0.5s;
 	 }
-
 	 .button span:after {
 	     content: '\00bb';
 	     position: absolute;
 	     opacity: 0;
 	     top: 0;
 	     right: -20px;
-	     transition: 0.5s;
+	     transition: 0.3s;
 	 }
-
 	 .button:hover span {
 	     padding-right: 25px;
 	 }
-
 	 .button:hover span:after {
 	     opacity: 1;
 	     right: 0;
 	 }
-	 #result_list p {
+	 .result {
+	     margin: 10px 5px 10px 5px;
 	     border: 2px;
 	     border-style: solid;
 	     border-radius: 5px;
-	     border-color: #3f3f3f;
+	     border-color: #F3F3F3;
 	 }
 	</style>
     </head>
@@ -271,8 +268,25 @@
 	</div>
 
 	<div id="result_list">
-	    <p>apartment name</p>
-	    
+	    <div class="result">
+		<script src="zillowapi.js"></script>
+		<script>
+		 const Http = new XMLHttpRequest();
+		 const url='http://www.zillow.com/webservice/GetSearchResults.htm?zws-id=X1-ZWz17zzknk57gr_4hjdy&address=2114+Bigelow+Ave&citystatezip=Seattle%2C+WA';
+		 Http.open("GET", url);
+		 Http.setRequestHeader('Access-Control-Allow-Headers', '*');
+		 Http.setRequestHeader('Access-Control-Allow-Origin', '*');
+		 Http.send();
+		 Http.onreadystatechange=(e)=>{
+		     console.log(Http.responseText)
+		 }
+		</script>
+		
+	    </div>
+	    <div class="result">
+		adsashdlkajfglskj<br>jalsdfhaklsdfj
+	    </div>
+
 	    
 	</div>
 	
