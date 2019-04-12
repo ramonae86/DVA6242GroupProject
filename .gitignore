@@ -28,4 +28,5 @@ Thumbs.db
 
 
 .idea/
-Icon
+Icon^M
+Icon\r
