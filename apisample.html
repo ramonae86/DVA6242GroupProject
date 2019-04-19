@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+	<meta charset="utf-8">
+	<title>Team 127</title>
+	<style>
+	 
+	</style>
+    </head>
+    <body>
+	<script>
+	 var requestURL = 'https://mdn.github.io/learning-area/javascript/oojs/json/superheroes.json';
+	 var request = new XMLHttpRequest();
+	 request.open('GET', requestURL);
+	 request.responseType = 'json';
+	 request.send();
+
+	 request.onload = function() {
+	     var superHeroes = request.response;
+	     console.log(superHeroes);
+	 }
+	</script>
+
+    </body>
+</html>
