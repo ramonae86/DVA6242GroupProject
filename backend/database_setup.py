@@ -64,6 +64,7 @@ conn.commit()
 conn.cursor().execute('''CREATE TABLE Apt (
                            Name varchar(200) NOT NULL,
                            Address varchar(500) NOT NULL,
+                           Images varchar(500) NULL,
                            PRIMARY KEY (Name)
                          )''')
 conn.commit()
