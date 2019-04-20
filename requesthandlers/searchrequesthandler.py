@@ -38,10 +38,33 @@ def handle_search_request(base_request_handler, request, conn):
         file.write(apt_names_line + "\n")
         file.write(apt_addresses_line + "\n")
         file.write(apt_images_line + "\n")
-        print("Response written to file.")
+        print("Apt names, addrsses, urls written to file.")
     else:
-        ## TODO search by school name
-        pass
+        query = '''
+            WITH zipcode_t AS
+            (
+                   SELECT zipcode
+                   FROM   school
+                   WHERE  NAME LIKE "%{}%" limit 1)
+            SELECT latitude,
+                   longitude
+            FROM   school
+            WHERE  zipcode IN
+                   (
+                          SELECT zipcode
+                          FROM   zipcode_t);
+                '''.format(search_word)
+
+        cur.execute(query)
+        rows = cur.fetchall()
+        lat_lng_pairs = []
+        for row in rows:
+            lat_lng = '{lat:%s,lng:%s}' % (row[0].strip(' \t'), row[1].strip(' \t'))
+            lat_lng_pairs.append(lat_lng)
+
+        apt_coords_school_zone = 'var apt_coords_school_zone = [' + ",".join(lat_lng_pairs) + ']'
+        file.write(apt_coords_school_zone + "\n")
+        print("Apt coordinats in school zone written to file.")
 
     file.close()
 
