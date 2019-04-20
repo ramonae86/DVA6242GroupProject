@@ -59,9 +59,3 @@ You can stop your server at any point by typing ```Ctrl + C``` at the command li
 Reference:
 [Set up Python3 http server](https://medium.com/@andrewklatzke/creating-a-python3-webserver-from-the-ground-up-4ff8933ecb96)
 
-## TODO
-### Insert test data in database
-### For each task we need:
-#### request handler on backend in Python3 (should include relevant SQL statements)
-#### template in HTML
-#### javascript to send request, process response and render the results
