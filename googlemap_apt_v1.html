@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple Map</title>
+  <meta name="viewport" content="initial-scale=1.0">
+  <meta charset="utf-8">
+  <script src="apartments.js"></script>
+  <script src="details.js"></script>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+<!--   <style></style>
+ --></head>
+<body>
+
+<div id="map">
+    <script>
+      // var labels = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+      // var labelIndex = 0;
+
+      var markers = [];
+      var infowindows = [];
+
+      // var time_walking = []
+      // var time_Bicycling = []
+      // var time_driving = []
+
+      var restaurants = [];
+      var names = [];
+      var image_urls =[];
+      var urls = [];
+      var ratings = [];
+      var prices = [];
+      var display_phones = [];
+      var yelp_coordinates = [];
+
+
+      for (i = 0; i < yelp.length; i++) { 
+          var lat = yelp[i]['coordinates']['latitude'];
+          var lng = yelp[i]['coordinates']['longitude'];
+          var rest = {};
+          rest['lat'] = lat;
+          rest['lng'] = lng;
+          yelp_coordinates.push(rest);
+          names.push(yelp[i]['name']);
+          image_urls.push(yelp[i]['image_url']);
+          urls.push(yelp[i]['url']);
+          ratings.push(yelp[i]['rating']);
+          // yelp_coordinates.push({'lat':yelp[i]['coordinates']['latitude'], 'lng':yelp[i]['coordinates']['longitude']})
+          if (typeof yelp[i]['price'] === 'undefined'){
+            prices.push('NA');
+          } else { 
+            prices.push(yelp[i]['price']);
+          }
+          display_phones.push(yelp[i]['display_phone'])
+      }
+       console.log(yelp_coordinates)
+
+      var map;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: apt,
+          zoom: 15
+        });
+
+        var styles = {
+            default: null,
+            hide: [
+              {
+                featureType: 'poi',
+                stylers: [{visibility: 'off'}]
+              },
+              {
+                featureType: 'transit',
+                elementType: 'labels.icon',
+                stylers: [{visibility: 'off'}]
+              }
+            ]
+        };
+
+        map.setOptions({styles: styles['hide']});
+
+
+        var serviceTimeTransit = new google.maps.DistanceMatrixService;
+        var serviceTimeWalk = new google.maps.DistanceMatrixService;
+
+        var yelp_time_transits = getTimes(yelp_coordinates,map);
+        var yelp_time_walks = getTimes(yelp_coordinates,map);
+
+        var yelp_strings=[];
+
+
+        Promise.all(yelp_time_transits)     
+        .then(function(yelp_time_transit){
+              // var total = 0
+              // for(var i = 0; i < yelp_time.length; i++) {
+              //     total += parseInt((yelp_time[i]).replace(/(^\d+)(.+$)/i,'$1'), 10);
+              // }
+              // var yelp_time_transit = total / yelp_time.length;
+              // console.log(yelp_time_transit)
+
+              // console.log(yelp_time);
+              // console.log(yelp_time[1]);
+              //parseInt(("6 mins").replace(/(^\d+)(.+$)/i,'$1'), 10)
+              // parseInt((yelp_time[i]).replace(/(^\d+)(.+$)/i,'$1'), 10)
+
+            for(i=0; i<yelp.length;i++){
+              var string ='<div id="iw-container">' +
+                            '<div class="iw-subTitle">'+names[i]+'</div>' +
+                            '<div class="iw-content">' +
+                              // '<div class="iw-subTitle">' + ratings[i] +'</div>' +
+                              '<img src='+image_urls[i] +' height="120">' + '<br>'+
+                                // '<p>LLLL</p>' +
+                              // '<div class="iw-subTitle">Details</div>' +
+                                '<p> Rating: ' + ratings[i] +
+                                '<br>Phone: ' + display_phones[i] +
+                                '<br>Price: ' + prices[i] +
+                                '<br>Transit time: ' + yelp_time_transit[i] +
+                                // '<br>Walk time: ' + yelp_time_walk[i] +
+
+                                // '<br>Yelp link: ' + urls[i] + '</p>'+
+                                '<br><a target="_blank" href=' + urls[i] + '>Click here to open this in Yelp</a>' + '</p>'+
+                              '</div>' +
+                              '<div class="iw-bottom-gradient"></div>' +
+                            '</div>';
+              yelp_strings.push(string);
+            }
+
+              var marker = new google.maps.Marker({
+                position: apt,
+                map: map,
+                title: 'apartment',
+                icon: 'marker_house_pink.png'
+              });
+
+              for (i = 0; i < yelp_coordinates.length; i++) { 
+                addMarker(yelp_coordinates[i], map, yelp_strings[i])
+                 
+              }
+
+
+
+        })
+
+
+
+
+
+
+      function normalIcon() {
+       //return 'map-icons.png'
+         return 'marker_restaurant.png'
+      }
+
+      function highlightedIcon() {
+        return 'marker_restaurant_large.png'
+      }
+
+      function normalOpacity() {
+        return 0.8
+      }
+
+      function highlightedOpacity() {
+        return 1
+      }
+
+     function getTimes(yelp_coordinates, map) {
+          let timeData = [];
+          let latValue;
+          for(let i = 0; i < yelp_coordinates.length; i++){
+              console.log(yelp_coordinates[i]);
+              console.log(YelpTimeTransit(yelp_coordinates[i], serviceTimeTransit, map));
+              timeData.push(YelpTimeTransit(yelp_coordinates[i], serviceTimeTransit, map));
+              // console.log(timeData);
+          }
+          console.log(timeData)
+          return timeData // array of promises
+      }
+
+      function YelpTimeTransit(coordinate, service, mainMap) {
+          return new Promise(function(resolve) {
+          serviceTimeTransit.getDistanceMatrix({
+            origins: [apt],
+            destinations: [coordinate],
+            travelMode: 'TRANSIT',
+            unitSystem: google.maps.UnitSystem.METRIC,
+          }, function(response, status) {
+            if (status !== 'OK') {
+              alert('Error was: ' + status);
+            } else {
+              var originList = response.originAddresses;
+              var destinationList = response.destinationAddresses;
+              // var outputDiv = document.getElementById('output');
+              for (var i = 0; i < 1; i++) {
+                var results = response.rows[i].elements;            
+                for (var j = 0; j < results.length; j++) {
+                  var time = results[j]['duration']['text'];
+                  // console.log(times);
+                  resolve(time);
+                }
+              }
+              // console.log(time);
+            }
+          })
+          })
+      } 
+
+
+      function addMarker(location, map, string) {
+       if(infowindow)
+       infowindow.close();
+       var infowindow = new google.maps.InfoWindow({content: string});
+        var marker = new google.maps.Marker({
+          position: location,
+          // label: labels[labelIndex++ % labels.length],
+          map: map,
+          icon: normalIcon(),  
+          opacity: normalOpacity()      
+        });
+
+ 
+        google.maps.event.addListener(map, "click", function(event) {
+            infowindow.close();
+            marker.setIcon(normalIcon());
+            marker.setOpacity(normalOpacity());
+        });
+
+        marker.addListener('click', function () {
+            for (var j = 0; j < markers.length; j++) {
+              markers[j].setIcon(normalIcon());
+              marker.setOpacity(normalOpacity());
+              infowindows[j].close(map, markers[j])
+            }
+            marker.setIcon(highlightedIcon());
+            marker.setOpacity(highlightedOpacity());
+            infowindow.open(map, marker);
+        })
+
+        infowindows.push(infowindow)
+        markers.push(marker);
+      }
+}
+    </script>
+</div>
+
+<div id='markers_info'>
+  <script>
+     function myfunction() {
+     }
+     function highlightedList() {
+        document.getElementById('img1').style.height = "400px";
+     }
+     function normalList() {
+
+     }
+  </script>
+</div>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAwrdvLk2XruYEsLwqpYwiqnaKbSwhHiiM&callback=initMap"
+    async defer></script>
+  </body>
+</html>

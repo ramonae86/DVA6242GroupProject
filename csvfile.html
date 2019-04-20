@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Simple Map</title>
+	<meta name="viewport" content="initial-scale=1.0">
+	<meta charset="utf-8">
+  <script src="jquery-3.4.0.js"></script>
+
+	<style>
+	  /* Always set the map height explicitly to define the size of the div
+	   * element that contains the map. */
+	  #map {
+	    height: 80%;
+	    width: 50%;
+	    margin-top:100px;
+	    margin-right:10px;
+	  }
+	  /* Optional: Makes the sample page fill the window. */
+	  html, body {
+	    height: 100%;
+	    width: : 100%;
+	    padding: 0;
+	  }
+
+    #markers_info .marker {
+      height: 40px;
+      width: 50px;
+      margin-left:1000px;
+      margin-right:10px;
+      cursor: pointer;*/*/
+    }
+  
+	</style>
+</head>
+<body>
+<script>
+$(document).ready(function() {
+   "use strict";
+    $.ajax({
+        type: "GET",
+        url: "coords1.csv",
+        dataType: "text",
+        success: function(data) {processData(data);}
+     });
+});
+
+function processData(coords1) {
+    "use strict";
+    var input = $.csv.toArrays(coords1);
+    $("#test").append(input);
+}
+</script>
+
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAwrdvLk2XruYEsLwqpYwiqnaKbSwhHiiM&callback=initMap"
+    async defer></script>
+  </body>
+</html>

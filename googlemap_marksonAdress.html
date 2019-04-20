@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Geocoding Service</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 100%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      #floating-panel {
+        position: absolute;
+        top: 10px;
+        left: 25%;
+        z-index: 5;
+        background-color: #fff;
+        padding: 5px;
+        border: 1px solid #999;
+        text-align: center;
+        font-family: 'Roboto','sans-serif';
+        line-height: 30px;
+        padding-left: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="map"></div>
+    <script>
+      var markers = [];
+      var infowindows = [];
+      Object.size = function(obj) {
+          var size = 0, key;
+          for (key in obj) {
+              if (obj.hasOwnProperty(key)) size++;
+          }
+          return size;
+      };
+
+
+      setTimeout(function(){
+          //do what you need here
+      }, 10000);
+
+      // Get the size of an object
+
+      function initMap() {
+        var coords = [];
+        var map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: 40.723040, lng: -73.999180},
+          zoom: 10
+        });
+        var addresses = ['201 W 120th St APT 6D, New York, NY 10027', '525 Broadway, New York, NY 10012'];
+        var strings = ['a', 'b'];
+
+        // document.getElementById('submit').addEventListener('click', function() {
+        //   geocodeAddress(geocoder, map);
+        // });
+        console.log(addresses);
+        console.log(addresses.length);
+
+
+        var geocoder = new google.maps.Geocoder();
+        for (i = 0; i < addresses.length; i++) { 
+          geocodeAddress(geocoder, addresses[i], coords);
+        }
+
+
+
+        // console.log(JSON.stringify(coords));
+        // console.log(Object.assign([],coords));
+        // console.log(coords[0]);
+
+        // console.log(coords[1]);
+        // console.log(coords.length);
+        // console.log(Array.isArray(coords));
+        // console.log(coords[0]);
+        // console.log(coords[1]);
+        // console.log(coords.length);
+
+
+        for (i = 0; i < addresses.length; i++) { 
+          addMarker(coords[i], map, strings[i]);
+          console.log(coords[i]);
+        }
+
+        console.log(markers.length);
+
+      }
+
+
+      function geocodeAddress(geocoder, address, coords) {
+        geocoder.geocode({'address': address}, function(results, status) {
+          if (status === 'OK') {
+            // console.log(results);
+            var latlng = {}
+            latlng['lat'] = results[0].geometry.location.lat();
+            latlng['lng'] = results[0].geometry.location.lng();
+            console.log(latlng);  
+            coords.push(latlng);
+            console.log(coords.length);
+          } else {
+            alert('Geocode was not successful for the following reason: ' + status);
+          }
+        });
+      }
+
+      function normalIcon() {
+        return 'marker_house_green.png'
+      }
+
+      function highlightedIcon() {
+        return 'marker_house_pink.png'
+      }
+
+     function addMarker(location, map, string) {
+        // Add the marker at the clicked location, and add the next-available label
+        // from the array of alphabetical characters.
+ 
+       if(infowindow)
+       infowindow.close();
+       var infowindow = new google.maps.InfoWindow({content: string});
+
+        var marker = new google.maps.Marker({
+          position: location,
+          map: map,
+          icon: normalIcon()         
+        });
+ 
+        google.maps.event.addListener(map, "click", function(event) {
+            infowindow.close();
+            marker.setIcon(normalIcon());
+        });
+
+        marker.addListener('click', function () {
+            for (var j = 0; j < markers.length; j++) {
+              markers[j].setIcon(normalIcon());
+              infowindows[j].close(map, markers[j])
+            }
+            marker.setIcon(highlightedIcon());
+            infowindow.open(map, marker);
+        })
+
+        infowindows.push(infowindow)
+        markers.push(marker);
+    }
+
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAwrdvLk2XruYEsLwqpYwiqnaKbSwhHiiM&callback=initMap">
+    </script>
+  </body>
+</html>

@@ -1,0 +1,16 @@
+1. 336 State St # 2, Brooklyn, NY 11217
+40.688453
+-73.986503
+ (https://www.zillow.com/homedetails/336-State-St-2-Brooklyn-NY-11217/2111534981_zpid/)
+2. 535 W 23rd St # 27084, New York, NY 10011
+40.748760
+-74.005323
+ (https://www.zillow.com/homedetails/535-W-23rd-St-27084-New-York-NY-10011/2085453264_zpid/)
+3. 201 W 120th St APT 6D, New York, NY 10027
+（https://www.zillow.com/homedetails/201-W-120th-St-APT-6D-New-York-NY-10027/2101983409_zpid/）
+40.806264
+-73.950991
+
+
+work: 
+525 Broadway, New York, NY 10012
