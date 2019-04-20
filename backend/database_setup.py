@@ -2,7 +2,7 @@
 
 import pymysql
 
-conn = pymysql.connect(host='localhost', user='root', password='1459')
+conn = pymysql.connect(host='localhost', user='root', password='ramon555')
 
 conn.cursor().execute('DROP DATABASE IF EXISTS cs6242')
 conn.cursor().execute('CREATE DATABASE cs6242')
