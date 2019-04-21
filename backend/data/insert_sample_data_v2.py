@@ -3,7 +3,9 @@ import pymysql
 import warnings
 
 
+
 conn = pymysql.connect(host='localhost', user='root', password='ramon555')
+
 conn.cursor().execute('USE cs6242')
 conn.cursor().execute('SET innodb_lock_wait_timeout = 10000')
 
