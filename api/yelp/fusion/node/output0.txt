@@ -1,0 +1,897 @@
+[
+    {
+        "id": "Aazjxg21VH2cncWYBAv68Q",
+        "alias": "sottocasa-pizzeria-brooklyn-3",
+        "name": "Sottocasa Pizzeria",
+        "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/MbBAMb3kb1VXtF9M5ptazA/o.jpg",
+        "is_closed": false,
+        "url": "https://www.yelp.com/biz/sottocasa-pizzeria-brooklyn-3?adjust_creative=l9agJO_xn0aq7qyWKA_uOA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=l9agJO_xn0aq7qyWKA_uOA",
+        "review_count": 580,
+        "categories": [
+            {
+                "alias": "pizza",
+                "title": "Pizza"
+            },
+            {
+                "alias": "italian",
+                "title": "Italian"
+            }
+        ],
+        "rating": 4.5,
+        "coordinates": {
+            "latitude": 40.688285,
+            "longitude": -73.989006
+        },
+        "transactions": [
+            "delivery"
+        ],
+        "price": "$$",
+        "location": {
+            "address1": "298 Atlantic Ave",
+            "address2": null,
+            "address3": "",
+            "city": "Brooklyn",
+            "zip_code": "11201",
+            "country": "US",
+            "state": "NY",
+            "display_address": [
+                "298 Atlantic Ave",
+                "Brooklyn, NY 11201"
+            ]
+        },
+        "phone": "+17188528758",
+        "display_phone": "(718) 852-8758",
+        "distance": 205.1810004778922
+    },
+    {
+        "id": "tT6teP3ZfCAfvdPdDoqG4A",
+        "alias": "ki-sushi-brooklyn",
+        "name": "Ki Sushi",
+        "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/hZn3q9qA_S_6vC8nhJD20A/o.jpg",
+        "is_closed": false,
+        "url": "https://www.yelp.com/biz/ki-sushi-brooklyn?adjust_creative=l9agJO_xn0aq7qyWKA_uOA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=l9agJO_xn0aq7qyWKA_uOA",
+        "review_count": 672,
+        "categories": [
+            {
+                "alias": "sushi",
+                "title": "Sushi Bars"
+            },
+            {
+                "alias": "japanese",
+                "title": "Japanese"
+            }
+        ],
+        "rating": 4,
+        "coordinates": {
+            "latitude": 40.68764,
+            "longitude": -73.9901
+        },
+        "transactions": [],
+        "price": "$$",
+        "location": {
+            "address1": "122 Smith St",
+            "address2": "",
+            "address3": "",
+            "city": "Brooklyn",
+            "zip_code": "11201",
+            "country": "US",
+            "state": "NY",
+            "display_address": [
+                "122 Smith St",
+                "Brooklyn, NY 11201"
+            ]
+        },
+        "phone": "+17189350575",
+        "display_phone": "(718) 935-0575",
+        "distance": 299.36105957457954
+    },
+    {
+        "id": "jWC4mD-yy-IzuZxU5ctAKw",
+        "alias": "mias-bakery-brooklyn",
+        "name": "Mia's Bakery",
+        "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/CjvLo6vsxDjaLCgyLpGUKg/o.jpg",
+        "is_closed": false,
+        "url": "https://www.yelp.com/biz/mias-bakery-brooklyn?adjust_creative=l9agJO_xn0aq7qyWKA_uOA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=l9agJO_xn0aq7qyWKA_uOA",
+        "review_count": 560,
+        "categories": [
+            {
+                "alias": "bakeries",
+                "title": "Bakeries"
+            },
+            {
+                "alias": "cafes",
+                "title": "Cafes"
+            },
+            {
+                "alias": "desserts",
+                "title": "Desserts"
+            }
+        ],
+        "rating": 4.5,
+        "coordinates": {
+            "latitude": 40.6870199,
+            "longitude": -73.9901299
+        },
+        "transactions": [
+            "delivery",
+            "pickup"
+        ],
+        "price": "$",
+        "location": {
+            "address1": "139 Smith St",
+            "address2": null,
+            "address3": "",
+            "city": "Brooklyn",
+            "zip_code": "11201",
+            "country": "US",
+            "state": "NY",
+            "display_address": [
+                "139 Smith St",
+                "Brooklyn, NY 11201"
+            ]
+        },
+        "phone": "+13479873194",
+        "display_phone": "(347) 987-3194",
+        "distance": 321.656522250798
+    },
+    {
+        "id": "c8TfKT7NdTuwcBZatXHmzg",
+        "alias": "new-york-transit-museum-brooklyn",
+        "name": "New York Transit Museum",
+        "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/eLAPxglG6BM0wVEb1kW7yw/o.jpg",
+        "is_closed": false,
+        "url": "https://www.yelp.com/biz/new-york-transit-museum-brooklyn?adjust_creative=l9agJO_xn0aq7qyWKA_uOA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=l9agJO_xn0aq7qyWKA_uOA",
+        "review_count": 380,
+        "categories": [
+            {
+                "alias": "museums",
+                "title": "Museums"
+            },
+            {
+                "alias": "venues",
+                "title": "Venues & Event Spaces"
+            }
+        ],
+        "rating": 4.5,
+        "coordinates": {
+            "latitude": 40.6905279416182,
+            "longitude": -73.9899399429917
+        },
+        "transactions": [],
+        "location": {
+            "address1": "Boerum Pl Schermerhorn St",
+            "address2": "",
+            "address3": "",
+            "city": "Brooklyn",
+            "zip_code": "11201",
+            "country": "US",
+            "state": "NY",
+            "display_address": [
+                "Boerum Pl Schermerhorn St",
+                "Brooklyn, NY 11201"
+            ]
+        },
+        "phone": "+17186941600",
+        "display_phone": "(718) 694-1600",
+        "distance": 385.574087925294
+    },
+    {
+        "id": "nGpC40fxoDQ-Ft0h-_gkVg",
+        "alias": "bedouin-tent-brooklyn",
+        "name": "Bedouin Tent",
+        "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/jKIzEMNHJ8t7IYHNNtZmPw/o.jpg",
+        "is_closed": false,
+        "url": "https://www.yelp.com/biz/bedouin-tent-brooklyn?adjust_creative=l9agJO_xn0aq7qyWKA_uOA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=l9agJO_xn0aq7qyWKA_uOA",
+        "review_count": 583,
+        "categories": [
+            {
+                "alias": "mideastern",
+                "title": "Middle Eastern"
+            }
+        ],
+        "rating": 4,
+        "coordinates": {
+            "latitude": 40.6869769801458,
+            "longitude": -73.984394049936
+        },
+        "transactions": [
+            "delivery",
+            "pickup"
+        ],
+        "price": "$",
+        "location": {
+            "address1": "405 Atlantic Ave",
+            "address2": "",
+            "address3": "",
+            "city": "Brooklyn",
+            "zip_code": "11217",
+            "country": "US",
+            "state": "NY",
+            "display_address": [
+                "405 Atlantic Ave",
+                "Brooklyn, NY 11217"
+            ]
+        },
+        "phone": "+17188525555",
+        "display_phone": "(718) 852-5555",
+        "distance": 227.29194733054817
+    },
+    {
+        "id": "LWDX1jKrNE8334jF6XenYQ",
+        "alias": "juniors-restaurant-brooklyn-4",
+        "name": "Junior's Restaurant",
+        "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/Uvx5Psf1IhBE8LW_Kw7Qbg/o.jpg",
+        "is_closed": false,
+        "url": "https://www.yelp.com/biz/juniors-restaurant-brooklyn-4?adjust_creative=l9agJO_xn0aq7qyWKA_uOA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=l9agJO_xn0aq7qyWKA_uOA",
+        "review_count": 1570,
+        "categories": [
+            {
+                "alias": "bakeries",
+                "title": "Bakeries"
+            },
+            {
+                "alias": "diners",
+                "title": "Diners"
+            }
+        ],
+        "rating": 3.5,
+        "coordinates": {
+            "latitude": 40.6901654162858,
+            "longitude": -73.9819239670089
+        },
+        "transactions": [
+            "delivery",
+            "pickup"
+        ],
+        "price": "$$",
+        "location": {
+            "address1": "386 Flatbush Ave",
+            "address2": "",
+            "address3": "",
+            "city": "Brooklyn",
+            "zip_code": "11238",
+            "country": "US",
+            "state": "NY",
+            "display_address": [
+                "386 Flatbush Ave",
+                "Brooklyn, NY 11238"
+            ]
+        },
+        "phone": "+17188525257",
+        "display_phone": "(718) 852-5257",
+        "distance": 449.25693588902084
+    },
+    {
+        "id": "NqnYnZtajJ4Y-Lmxa26VdA",
+        "alias": "hancos-brooklyn",
+        "name": "Hanco's",
+        "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/ggIqWDnFXMwzemhCXg_ZTg/o.jpg",
+        "is_closed": false,
+        "url": "https://www.yelp.com/biz/hancos-brooklyn?adjust_creative=l9agJO_xn0aq7qyWKA_uOA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=l9agJO_xn0aq7qyWKA_uOA",
+        "review_count": 656,
+        "categories": [
+            {
+                "alias": "vietnamese",
+                "title": "Vietnamese"
+            },
+            {
+                "alias": "bubbletea",
+                "title": "Bubble Tea"
+            },
+            {
+                "alias": "coffee",
+                "title": "Coffee & Tea"
+            }
+        ],
+        "rating": 4,
+        "coordinates": {
+            "latitude": 40.6870318621828,
+            "longitude": -73.9904292380982
+        },
+        "transactions": [
+            "delivery",
+            "pickup"
+        ],
+        "price": "$",
+        "location": {
+            "address1": "134 Smith St",
+            "address2": "",
+            "address3": "",
+            "city": "Brooklyn",
+            "zip_code": "11201",
+            "country": "US",
+            "state": "NY",
+            "display_address": [
+                "134 Smith St",
+                "Brooklyn, NY 11201"
+            ]
+        },
+        "phone": "+17188586818",
+        "display_phone": "(718) 858-6818",
+        "distance": 349.87780287578323
+    },
+    {
+        "id": "HFOiW4RvijuoblE4DD3JwA",
+        "alias": "dekalb-market-hall-brooklyn-2",
+        "name": "Dekalb Market Hall",
+        "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/8uY338Gbzs90jcFnPryZ-w/o.jpg",
+        "is_closed": false,
+        "url": "https://www.yelp.com/biz/dekalb-market-hall-brooklyn-2?adjust_creative=l9agJO_xn0aq7qyWKA_uOA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=l9agJO_xn0aq7qyWKA_uOA",
+        "review_count": 578,
+        "categories": [
+            {
+                "alias": "food_court",
+                "title": "Food Court"
+            }
+        ],
+        "rating": 4,
+        "coordinates": {
+            "latitude": 40.690584,
+            "longitude": -73.982326
+        },
+        "transactions": [],
+        "price": "$$",
+        "location": {
+            "address1": "445 Albee Square W",
+            "address2": "Basement Level",
+            "address3": null,
+            "city": "Brooklyn",
+            "zip_code": "11201",
+            "country": "US",
+            "state": "NY",
+            "display_address": [
+                "445 Albee Square W",
+                "Basement Level",
+                "Brooklyn, NY 11201"
+            ]
+        },
+        "phone": "+19293596555",
+        "display_phone": "(929) 359-6555",
+        "distance": 466.50774089998043
+    },
+    {
+        "id": "0lMLRsJZSh2Uh1Eo0YrMPA",
+        "alias": "eight-turn-crêpe-brooklyn",
+        "name": "Eight Turn Crêpe",
+        "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/37p3UOqhrIWFwG8BlNFvOQ/o.jpg",
+        "is_closed": false,
+        "url": "https://www.yelp.com/biz/eight-turn-cr%C3%AApe-brooklyn?adjust_creative=l9agJO_xn0aq7qyWKA_uOA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=l9agJO_xn0aq7qyWKA_uOA",
+        "review_count": 566,
+        "categories": [
+            {
+                "alias": "creperies",
+                "title": "Creperies"
+            },
+            {
+                "alias": "icecream",
+                "title": "Ice Cream & Frozen Yogurt"
+            },
+            {
+                "alias": "catering",
+                "title": "Caterers"
+            }
+        ],
+        "rating": 4,
+        "coordinates": {
+            "latitude": 40.6912509,
+            "longitude": -73.9832589
+        },
+        "transactions": [
+            "delivery",
+            "pickup"
+        ],
+        "price": "$$",
+        "location": {
+            "address1": "445 Albee Square W",
+            "address2": "",
+            "address3": "",
+            "city": "Brooklyn",
+            "zip_code": "11201",
+            "country": "US",
+            "state": "NY",
+            "display_address": [
+                "445 Albee Square W",
+                "Brooklyn, NY 11201"
+            ]
+        },
+        "phone": "+19293587988",
+        "display_phone": "(929) 358-7988",
+        "distance": 466.50774089998043
+    },
+    {
+        "id": "mXLrVoEi80WZaZ3agBP5Jw",
+        "alias": "bijans-brooklyn-2",
+        "name": "Bijan's",
+        "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/VJmLtQJ2tXq9qjlhGGMVxg/o.jpg",
+        "is_closed": false,
+        "url": "https://www.yelp.com/biz/bijans-brooklyn-2?adjust_creative=l9agJO_xn0aq7qyWKA_uOA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=l9agJO_xn0aq7qyWKA_uOA",
+        "review_count": 483,
+        "categories": [
+            {
+                "alias": "newamerican",
+                "title": "American (New)"
+            },
+            {
+                "alias": "cocktailbars",
+                "title": "Cocktail Bars"
+            },
+            {
+                "alias": "mediterranean",
+                "title": "Mediterranean"
+            }
+        ],
+        "rating": 4,
+        "coordinates": {
+            "latitude": 40.68803,
+            "longitude": -73.98671
+        },
+        "transactions": [
+            "delivery",
+            "pickup",
+            "restaurant_reservation"
+        ],
+        "price": "$$",
+        "location": {
+            "address1": "81 Hoyt St",
+            "address2": "",
+            "address3": "",
+            "city": "Brooklyn",
+            "zip_code": "11211",
+            "country": "US",
+            "state": "NY",
+            "display_address": [
+                "81 Hoyt St",
+                "Brooklyn, NY 11211"
+            ]
+        },
+        "phone": "+17188555574",
+        "display_phone": "(718) 855-5574",
+        "distance": 26.581097802399597
+    },
+    {
+        "id": "mv8dMMzzrzalso3sYCP_QA",
+        "alias": "cafe-luluc-brooklyn",
+        "name": "Cafe Luluc",
+        "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/dJVDAebEjqNUs0YZHEk3MQ/o.jpg",
+        "is_closed": false,
+        "url": "https://www.yelp.com/biz/cafe-luluc-brooklyn?adjust_creative=l9agJO_xn0aq7qyWKA_uOA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=l9agJO_xn0aq7qyWKA_uOA",
+        "review_count": 1301,
+        "categories": [
+            {
+                "alias": "french",
+                "title": "French"
+            },
+            {
+                "alias": "breakfast_brunch",
+                "title": "Breakfast & Brunch"
+            },
+            {
+                "alias": "cafes",
+                "title": "Cafes"
+            }
+        ],
+        "rating": 4,
+        "coordinates": {
+            "latitude": 40.68447,
+            "longitude": -73.99214
+        },
+        "transactions": [],
+        "price": "$$",
+        "location": {
+            "address1": "214 Smith St",
+            "address2": "",
+            "address3": "",
+            "city": "Brooklyn",
+            "zip_code": "11201",
+            "country": "US",
+            "state": "NY",
+            "display_address": [
+                "214 Smith St",
+                "Brooklyn, NY 11201"
+            ]
+        },
+        "phone": "+17186253815",
+        "display_phone": "(718) 625-3815",
+        "distance": 626.841450344032
+    },
+    {
+        "id": "xiEBdZ8z5KY21Vw2pY2fJQ",
+        "alias": "two-8-two-bar-and-burger-brooklyn",
+        "name": "Two 8 Two Bar & Burger",
+        "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/hcnZ7E1K-OYwA8Iu6YMhVA/o.jpg",
+        "is_closed": false,
+        "url": "https://www.yelp.com/biz/two-8-two-bar-and-burger-brooklyn?adjust_creative=l9agJO_xn0aq7qyWKA_uOA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=l9agJO_xn0aq7qyWKA_uOA",
+        "review_count": 597,
+        "categories": [
+            {
+                "alias": "burgers",
+                "title": "Burgers"
+            },
+            {
+                "alias": "bars",
+                "title": "Bars"
+            }
+        ],
+        "rating": 4,
+        "coordinates": {
+            "latitude": 40.688536,
+            "longitude": -73.989728
+        },
+        "transactions": [],
+        "price": "$$",
+        "location": {
+            "address1": "282 Atlantic Ave",
+            "address2": "",
+            "address3": "",
+            "city": "Brooklyn",
+            "zip_code": "11201",
+            "country": "US",
+            "state": "NY",
+            "display_address": [
+                "282 Atlantic Ave",
+                "Brooklyn, NY 11201"
+            ]
+        },
+        "phone": "+17185962282",
+        "display_phone": "(718) 596-2282",
+        "distance": 268.7621192036198
+    },
+    {
+        "id": "12anHG0qFlw8Jkb99RX3Mg",
+        "alias": "mile-end-delicatessen-brooklyn-brooklyn",
+        "name": "Mile End Delicatessen Brooklyn",
+        "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/BzdfXDCdByzQDNN2b9ewtA/o.jpg",
+        "is_closed": false,
+        "url": "https://www.yelp.com/biz/mile-end-delicatessen-brooklyn-brooklyn?adjust_creative=l9agJO_xn0aq7qyWKA_uOA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=l9agJO_xn0aq7qyWKA_uOA",
+        "review_count": 740,
+        "categories": [
+            {
+                "alias": "delis",
+                "title": "Delis"
+            },
+            {
+                "alias": "breakfast_brunch",
+                "title": "Breakfast & Brunch"
+            },
+            {
+                "alias": "sandwiches",
+                "title": "Sandwiches"
+            }
+        ],
+        "rating": 3.5,
+        "coordinates": {
+            "latitude": 40.6875051,
+            "longitude": -73.9870685
+        },
+        "transactions": [
+            "delivery",
+            "pickup"
+        ],
+        "price": "$$",
+        "location": {
+            "address1": "97A Hoyt St",
+            "address2": "",
+            "address3": "",
+            "city": "Brooklyn",
+            "zip_code": "11217",
+            "country": "US",
+            "state": "NY",
+            "display_address": [
+                "97A Hoyt St",
+                "Brooklyn, NY 11217"
+            ]
+        },
+        "phone": "+17188527510",
+        "display_phone": "(718) 852-7510",
+        "distance": 86.58169363265021
+    },
+    {
+        "id": "wctR1TrheHAwpHZ2sJknEw",
+        "alias": "yemen-cafe-and-restaurant-brooklyn-3",
+        "name": "Yemen Cafe & Restaurant",
+        "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/hK_7Ac9vKgYU7w9GUZzEZA/o.jpg",
+        "is_closed": false,
+        "url": "https://www.yelp.com/biz/yemen-cafe-and-restaurant-brooklyn-3?adjust_creative=l9agJO_xn0aq7qyWKA_uOA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=l9agJO_xn0aq7qyWKA_uOA",
+        "review_count": 453,
+        "categories": [
+            {
+                "alias": "mideastern",
+                "title": "Middle Eastern"
+            },
+            {
+                "alias": "cafes",
+                "title": "Cafes"
+            },
+            {
+                "alias": "soup",
+                "title": "Soup"
+            }
+        ],
+        "rating": 4.5,
+        "coordinates": {
+            "latitude": 40.6899167976363,
+            "longitude": -73.9936561765076
+        },
+        "transactions": [
+            "pickup"
+        ],
+        "price": "$$",
+        "location": {
+            "address1": "176 Atlantic Ave",
+            "address2": "",
+            "address3": "",
+            "city": "Brooklyn",
+            "zip_code": "11201",
+            "country": "US",
+            "state": "NY",
+            "display_address": [
+                "176 Atlantic Ave",
+                "Brooklyn, NY 11201"
+            ]
+        },
+        "phone": "+17188349533",
+        "display_phone": "(718) 834-9533",
+        "distance": 627.8510397145197
+    },
+    {
+        "id": "uT9AowKJcAN59Mteud36lA",
+        "alias": "shake-shack-brooklyn",
+        "name": "Shake Shack",
+        "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/lsM1oTm23bg7y5AZmFrNZg/o.jpg",
+        "is_closed": false,
+        "url": "https://www.yelp.com/biz/shake-shack-brooklyn?adjust_creative=l9agJO_xn0aq7qyWKA_uOA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=l9agJO_xn0aq7qyWKA_uOA",
+        "review_count": 821,
+        "categories": [
+            {
+                "alias": "burgers",
+                "title": "Burgers"
+            },
+            {
+                "alias": "icecream",
+                "title": "Ice Cream & Frozen Yogurt"
+            }
+        ],
+        "rating": 4,
+        "coordinates": {
+            "latitude": 40.6920881,
+            "longitude": -73.9888694
+        },
+        "transactions": [],
+        "price": "$$",
+        "location": {
+            "address1": "409 Fulton St",
+            "address2": "",
+            "address3": "",
+            "city": "Brooklyn",
+            "zip_code": "11201",
+            "country": "US",
+            "state": "NY",
+            "display_address": [
+                "409 Fulton St",
+                "Brooklyn, NY 11201"
+            ]
+        },
+        "phone": "+17183077599",
+        "display_phone": "(718) 307-7599",
+        "distance": 475.3710468492295
+    },
+    {
+        "id": "4MqJOLaeqCgBFQmMFPfe3g",
+        "alias": "clover-club-brooklyn",
+        "name": "Clover Club",
+        "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/cgVSndPI36eMNqPxmLNzSg/o.jpg",
+        "is_closed": false,
+        "url": "https://www.yelp.com/biz/clover-club-brooklyn?adjust_creative=l9agJO_xn0aq7qyWKA_uOA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=l9agJO_xn0aq7qyWKA_uOA",
+        "review_count": 727,
+        "categories": [
+            {
+                "alias": "lounges",
+                "title": "Lounges"
+            },
+            {
+                "alias": "tradamerican",
+                "title": "American (Traditional)"
+            },
+            {
+                "alias": "cocktailbars",
+                "title": "Cocktail Bars"
+            }
+        ],
+        "rating": 4,
+        "coordinates": {
+            "latitude": 40.6846046447754,
+            "longitude": -73.9921875
+        },
+        "transactions": [
+            "delivery",
+            "pickup"
+        ],
+        "price": "$$",
+        "location": {
+            "address1": "210 Smith St",
+            "address2": "",
+            "address3": "",
+            "city": "Brooklyn",
+            "zip_code": "11201",
+            "country": "US",
+            "state": "NY",
+            "display_address": [
+                "210 Smith St",
+                "Brooklyn, NY 11201"
+            ]
+        },
+        "phone": "+17188557939",
+        "display_phone": "(718) 855-7939",
+        "distance": 617.2034391403124
+    },
+    {
+        "id": "Ry9w-jFALWYhazi6jjyIKw",
+        "alias": "rucola-brooklyn",
+        "name": "Rucola",
+        "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/hEd0el_uTyI7F6sd7Ea99w/o.jpg",
+        "is_closed": false,
+        "url": "https://www.yelp.com/biz/rucola-brooklyn?adjust_creative=l9agJO_xn0aq7qyWKA_uOA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=l9agJO_xn0aq7qyWKA_uOA",
+        "review_count": 452,
+        "categories": [
+            {
+                "alias": "italian",
+                "title": "Italian"
+            },
+            {
+                "alias": "desserts",
+                "title": "Desserts"
+            },
+            {
+                "alias": "diners",
+                "title": "Diners"
+            }
+        ],
+        "rating": 4,
+        "coordinates": {
+            "latitude": 40.68562,
+            "longitude": -73.98587
+        },
+        "transactions": [],
+        "price": "$$",
+        "location": {
+            "address1": "190 Dean St",
+            "address2": "",
+            "address3": "",
+            "city": "Brooklyn",
+            "zip_code": "11217",
+            "country": "US",
+            "state": "NY",
+            "display_address": [
+                "190 Dean St",
+                "Brooklyn, NY 11217"
+            ]
+        },
+        "phone": "+17185763209",
+        "display_phone": "(718) 576-3209",
+        "distance": 294.55370372209944
+    },
+    {
+        "id": "9pI_G9xGiTY4YCcfe9eoPA",
+        "alias": "french-louie-boerum-hill",
+        "name": "French Louie",
+        "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/4eOKRY37AJ6_vc6z-xe8wQ/o.jpg",
+        "is_closed": false,
+        "url": "https://www.yelp.com/biz/french-louie-boerum-hill?adjust_creative=l9agJO_xn0aq7qyWKA_uOA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=l9agJO_xn0aq7qyWKA_uOA",
+        "review_count": 330,
+        "categories": [
+            {
+                "alias": "french",
+                "title": "French"
+            }
+        ],
+        "rating": 4,
+        "coordinates": {
+            "latitude": 40.6879459,
+            "longitude": -73.988257
+        },
+        "transactions": [],
+        "price": "$$",
+        "location": {
+            "address1": "320 Atlantic Ave",
+            "address2": "",
+            "address3": "",
+            "city": "Boerum Hill",
+            "zip_code": "11201",
+            "country": "US",
+            "state": "NY",
+            "display_address": [
+                "320 Atlantic Ave",
+                "Boerum Hill, NY 11201"
+            ]
+        },
+        "phone": "+17189351200",
+        "display_phone": "(718) 935-1200",
+        "distance": 144.83621152261364
+    },
+    {
+        "id": "pSSajdYNKTyAGV8-fk7fWQ",
+        "alias": "joya-brooklyn",
+        "name": "Joya",
+        "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/X4HbR16EFVcywHtrW7BPqQ/o.jpg",
+        "is_closed": false,
+        "url": "https://www.yelp.com/biz/joya-brooklyn?adjust_creative=l9agJO_xn0aq7qyWKA_uOA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=l9agJO_xn0aq7qyWKA_uOA",
+        "review_count": 1255,
+        "categories": [
+            {
+                "alias": "thai",
+                "title": "Thai"
+            }
+        ],
+        "rating": 3.5,
+        "coordinates": {
+            "latitude": 40.6866607666016,
+            "longitude": -73.9934997558594
+        },
+        "transactions": [
+            "delivery",
+            "pickup"
+        ],
+        "price": "$$",
+        "location": {
+            "address1": "215 Ct St",
+            "address2": "",
+            "address3": "",
+            "city": "Brooklyn",
+            "zip_code": "11201",
+            "country": "US",
+            "state": "NY",
+            "display_address": [
+                "215 Ct St",
+                "Brooklyn, NY 11201"
+            ]
+        },
+        "phone": "+17182223484",
+        "display_phone": "(718) 222-3484",
+        "distance": 614.7788380757313
+    },
+    {
+        "id": "ZOfk6Ao0db5icjc0WEq7zg",
+        "alias": "bacchus-bistro-and-wine-bar-brooklyn-2",
+        "name": "Bacchus Bistro & Wine Bar",
+        "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/8Wiromw_MWgSa_Fh0kB-PQ/o.jpg",
+        "is_closed": false,
+        "url": "https://www.yelp.com/biz/bacchus-bistro-and-wine-bar-brooklyn-2?adjust_creative=l9agJO_xn0aq7qyWKA_uOA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=l9agJO_xn0aq7qyWKA_uOA",
+        "review_count": 436,
+        "categories": [
+            {
+                "alias": "french",
+                "title": "French"
+            },
+            {
+                "alias": "wine_bars",
+                "title": "Wine Bars"
+            }
+        ],
+        "rating": 4,
+        "coordinates": {
+            "latitude": 40.68692,
+            "longitude": -73.98437
+        },
+        "transactions": [
+            "delivery",
+            "pickup"
+        ],
+        "price": "$$",
+        "location": {
+            "address1": "409-411 Atlantic Ave",
+            "address2": "",
+            "address3": "",
+            "city": "Brooklyn",
+            "zip_code": "11217",
+            "country": "US",
+            "state": "NY",
+            "display_address": [
+                "409-411 Atlantic Ave",
+                "Brooklyn, NY 11217"
+            ]
+        },
+        "phone": "+17188521572",
+        "display_phone": "(718) 852-1572",
+        "distance": 231.75341059847534
+    }
+]
