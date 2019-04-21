@@ -66,6 +66,20 @@
 	     height: 60%;
 	 }
 	</style>
+	<script src="data.js"></script>
+	
+	<script>
+	 function getUrlVars() {
+	     var vars = {};
+	     var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+		 vars[key] = value;
+	     });
+	     return vars;
+	 }
+	 console.log(getUrlVars());
+	 var i = getUrlVars()['id'];
+	 console.log(i);
+	</script>
     </head>
     <body>
 	<div id="logo_container">
@@ -76,12 +90,21 @@
 
 	<div id="info">
 	    <div class="name_and_address">
-		<h1>[Herald Towers](https://www.apartments.com/herald-towers-new-york-ny/rjlbf92/)</h1>
-		<p>[50 W 34th St, New York, NY 10001](https://www.google.com/maps/dir/'350+5th+Ave+New+York,+NY+10118'/50+W+34th+St,+New+York,+NY+10001/data=!4m2!4m1!3e2)</p>
+		<h1><script>document.write(apt_names[i]);</script></h1>
+		<p><script>document.write(apt_addresses[i]);</script></p>
 	    </div>
 
 	    <div class="features">
-		<img class="apt_img" src="https://images1.apartments.com/i2/pA7OU9D2pbCA2cIJcBHGdAgnvH46dcAdLaSBY5WWybE/111/518-w-204th-st-unit-1-new-york-ny-primary-photo.jpg" align="middle">
+		<script>
+		 var image;
+		 if(apt_images[i]==""){
+		     image = "img/no_image_icon.png";
+		 } else {
+		     image = apt_images[i];
+		 }
+		 var htmlcommands="<img class='apt_img' src='"+image+"' align='middle'>";
+		 document.write(htmlcommands);
+		</script>
 		<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>
 	    </div>
 

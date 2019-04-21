@@ -13,7 +13,6 @@
 	     });
 	     return vars;
 	 }
-	 console.log(getUrlVars());
 	</script>
 	<link rel="stylesheet" type="text/css" href="styles1.css">
 	<title>Team 127</title>
@@ -134,9 +133,15 @@
 		<input class="selectopt" name="yelp" type="radio" id="yelp6">
 		<label for="yelp6" class="option">Italian</label>
 	    </div>
-	    <button class="update_image"><img src="img/update.png"></button>
-	    <!-- 	    <button class="button" style="vertical-align:middle"><span>Update </span></button>
-	    -->	</div>
+	    <button class="update_image" onclick="update()"><img src="img/update.png"></button>
+	    <script type="text/javascript">
+	     function update(){
+		 console.log("updating");
+		 var a = $("input[name='Safety']:checked").val();
+		 console.log(a);
+	     }
+	    </script>
+	    </div>
 
 	<div id="result_list">
 	    <div class="ScrollStyle">
@@ -149,18 +154,19 @@
 
  		</div>
 		<script>
+		 console.log(apt_images[0][0]);
 		 for (i=0;i<apt_addresses.length;i++)
 		 {
 		     document.write(i+1);
 		     var image;
-		     if(apt_images[i]==""){
+		     if(apt_images[i][0]==""){
 			 image = "img/no_image_icon.png";
 		     } else {
-			 image = apt_images[i];
+			 image = apt_images[i][0];
 		     }
-		     var htmlcommands = "<div class='panel' onmouseover='markers["+i+"].setIcon(highlightedIcon());' onmouseout='markers["+i+"].setIcon(normalIcon());' ><img src='" + image + "'>";
+		     var htmlcommands = "<a href='Page3.html?id="+i+"'><div class='panel' onmouseover='markers["+i+"].setIcon(highlightedIcon());' onmouseout='markers["+i+"].setIcon(normalIcon());' ><img src='" + image + "'>";
 		     htmlcommands += "<span><div class='panel_text1'>" + apt_names[i] + "</div><div class='panel_text2'>" + apt_addresses[i] + "</div></span>";
-		     htmlcommands += "</div>"
+		     htmlcommands += "</a></div>"
 		     document.write(htmlcommands);
 		 }
 		 
@@ -228,8 +234,8 @@
 
 		 Promise.all(locations)     
 			.then(function(returnVals){
-			    console.log(returnVals);
-			    console.log(returnVals[0]);
+			    //console.log(returnVals);
+			    //console.log(returnVals[0]);
 			    for (i = 0; i < returnVals.length; i++) { 
 				addMarker(returnVals[i], map, strings[i])         
 			    }
@@ -281,7 +287,7 @@
 		 let latValue;
 		 for(let i = 0; i < apt_addresses.length; i++){
 	             locationData.push(findLatLang(apt_addresses[i], geocoder, map));
-	             console.log(locationData);
+	             //console.log(locationData);
 		 }
 		 return locationData // array of promises
 	     }
@@ -290,7 +296,7 @@
 		 return new Promise(function(resolve, reject) {
 	             geocoder.geocode({'address': address}, function(results, status) {
 			 if (status === 'OK') {
-	                     console.log(results);
+	                     //console.log(results);
 	                     // resolve([results[0].geometry.location.lat(), results[0].geometry.location.lng()]);
 	                     resolve({'lat':results[0].geometry.location.lat(), 'lng':results[0].geometry.location.lng()});
 			 } else {
