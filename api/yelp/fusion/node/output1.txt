@@ -1,0 +1,898 @@
+[
+    {
+        "id": "tsiC3VpO-hZEb98Qk3p-DQ",
+        "alias": "amy-ruths-new-york",
+        "name": "Amy Ruth's",
+        "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/aX-TMDOSS2vO-0L47FoZ0Q/o.jpg",
+        "is_closed": false,
+        "url": "https://www.yelp.com/biz/amy-ruths-new-york?adjust_creative=l9agJO_xn0aq7qyWKA_uOA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=l9agJO_xn0aq7qyWKA_uOA",
+        "review_count": 2421,
+        "categories": [
+            {
+                "alias": "southern",
+                "title": "Southern"
+            },
+            {
+                "alias": "soulfood",
+                "title": "Soul Food"
+            }
+        ],
+        "rating": 4,
+        "coordinates": {
+            "latitude": 40.80248,
+            "longitude": -73.95038
+        },
+        "transactions": [
+            "delivery",
+            "pickup"
+        ],
+        "price": "$$",
+        "location": {
+            "address1": "113 W 116th St",
+            "address2": "",
+            "address3": "",
+            "city": "New York",
+            "zip_code": "10026",
+            "country": "US",
+            "state": "NY",
+            "display_address": [
+                "113 W 116th St",
+                "New York, NY 10026"
+            ]
+        },
+        "phone": "+12122808779",
+        "display_phone": "(212) 280-8779",
+        "distance": 389.7594677821997
+    },
+    {
+        "id": "QHYqNQhQ8NVK0RX68Y4PuQ",
+        "alias": "levain-bakery-new-york-3",
+        "name": "Levain Bakery",
+        "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/YMKN-HZ8rSHYsBTje8IXHg/o.jpg",
+        "is_closed": false,
+        "url": "https://www.yelp.com/biz/levain-bakery-new-york-3?adjust_creative=l9agJO_xn0aq7qyWKA_uOA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=l9agJO_xn0aq7qyWKA_uOA",
+        "review_count": 657,
+        "categories": [
+            {
+                "alias": "bakeries",
+                "title": "Bakeries"
+            }
+        ],
+        "rating": 4.5,
+        "coordinates": {
+            "latitude": 40.8049739,
+            "longitude": -73.9551513
+        },
+        "transactions": [],
+        "price": "$$",
+        "location": {
+            "address1": "2167 Frederick Douglass Blvd",
+            "address2": "",
+            "address3": "",
+            "city": "New York",
+            "zip_code": "10026",
+            "country": "US",
+            "state": "NY",
+            "display_address": [
+                "2167 Frederick Douglass Blvd",
+                "New York, NY 10026"
+            ]
+        },
+        "phone": "+16464550952",
+        "display_phone": "(646) 455-0952",
+        "distance": 365.6121821530254
+    },
+    {
+        "id": "J9xVQScnr0lYWl61_mLXMA",
+        "alias": "lido-new-york",
+        "name": "Lido",
+        "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/nlJAMT6QJfZW54wd9Id-0g/o.jpg",
+        "is_closed": false,
+        "url": "https://www.yelp.com/biz/lido-new-york?adjust_creative=l9agJO_xn0aq7qyWKA_uOA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=l9agJO_xn0aq7qyWKA_uOA",
+        "review_count": 903,
+        "categories": [
+            {
+                "alias": "italian",
+                "title": "Italian"
+            },
+            {
+                "alias": "breakfast_brunch",
+                "title": "Breakfast & Brunch"
+            },
+            {
+                "alias": "cocktailbars",
+                "title": "Cocktail Bars"
+            }
+        ],
+        "rating": 4,
+        "coordinates": {
+            "latitude": 40.8049797781916,
+            "longitude": -73.9548260014624
+        },
+        "transactions": [
+            "delivery",
+            "pickup"
+        ],
+        "price": "$$",
+        "location": {
+            "address1": "2168 Frederick Douglass Blvd",
+            "address2": "",
+            "address3": "",
+            "city": "New York",
+            "zip_code": "10026",
+            "country": "US",
+            "state": "NY",
+            "display_address": [
+                "2168 Frederick Douglass Blvd",
+                "New York, NY 10026"
+            ]
+        },
+        "phone": "+16464908575",
+        "display_phone": "(646) 490-8575",
+        "distance": 339.0809769182354
+    },
+    {
+        "id": "fxGpXRxFUDzlU3Cyszu4uQ",
+        "alias": "red-rooster-harlem-new-york-3",
+        "name": "Red Rooster Harlem",
+        "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/S_4wwMMYx74kk-Wh9gQVcg/o.jpg",
+        "is_closed": false,
+        "url": "https://www.yelp.com/biz/red-rooster-harlem-new-york-3?adjust_creative=l9agJO_xn0aq7qyWKA_uOA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=l9agJO_xn0aq7qyWKA_uOA",
+        "review_count": 2940,
+        "categories": [
+            {
+                "alias": "tradamerican",
+                "title": "American (Traditional)"
+            }
+        ],
+        "rating": 3.5,
+        "coordinates": {
+            "latitude": 40.80815,
+            "longitude": -73.94488
+        },
+        "transactions": [],
+        "price": "$$$",
+        "location": {
+            "address1": "310 Lenox Ave",
+            "address2": "",
+            "address3": "",
+            "city": "New York",
+            "zip_code": "10027",
+            "country": "US",
+            "state": "NY",
+            "display_address": [
+                "310 Lenox Ave",
+                "New York, NY 10027"
+            ]
+        },
+        "phone": "+12127929001",
+        "display_phone": "(212) 792-9001",
+        "distance": 577.3895702305599
+    },
+    {
+        "id": "IJg3TdXz8IzKTfcspmr8MQ",
+        "alias": "seasoned-vegan-new-york-2",
+        "name": "Seasoned Vegan",
+        "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/4cA_jzY4x6IPWcB79n6aSQ/o.jpg",
+        "is_closed": false,
+        "url": "https://www.yelp.com/biz/seasoned-vegan-new-york-2?adjust_creative=l9agJO_xn0aq7qyWKA_uOA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=l9agJO_xn0aq7qyWKA_uOA",
+        "review_count": 1003,
+        "categories": [
+            {
+                "alias": "vegan",
+                "title": "Vegan"
+            },
+            {
+                "alias": "soulfood",
+                "title": "Soul Food"
+            },
+            {
+                "alias": "kosher",
+                "title": "Kosher"
+            }
+        ],
+        "rating": 4,
+        "coordinates": {
+            "latitude": 40.80064,
+            "longitude": -73.952804
+        },
+        "transactions": [
+            "delivery",
+            "pickup"
+        ],
+        "price": "$$",
+        "location": {
+            "address1": "55 St Nicholas Ave",
+            "address2": "",
+            "address3": "",
+            "city": "New York",
+            "zip_code": "10026",
+            "country": "US",
+            "state": "NY",
+            "display_address": [
+                "55 St Nicholas Ave",
+                "New York, NY 10026"
+            ]
+        },
+        "phone": "+12122220092",
+        "display_phone": "(212) 222-0092",
+        "distance": 612.5214390947071
+    },
+    {
+        "id": "XOnspIaW6mYVmrvgqOaYSQ",
+        "alias": "lolos-seafood-shack-new-york",
+        "name": "Lolo's Seafood Shack",
+        "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/OeueWGrQ0GELrISxoULReg/o.jpg",
+        "is_closed": false,
+        "url": "https://www.yelp.com/biz/lolos-seafood-shack-new-york?adjust_creative=l9agJO_xn0aq7qyWKA_uOA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=l9agJO_xn0aq7qyWKA_uOA",
+        "review_count": 606,
+        "categories": [
+            {
+                "alias": "seafood",
+                "title": "Seafood"
+            },
+            {
+                "alias": "bars",
+                "title": "Bars"
+            }
+        ],
+        "rating": 4,
+        "coordinates": {
+            "latitude": 40.80486,
+            "longitude": -73.95567
+        },
+        "transactions": [
+            "restaurant_reservation",
+            "delivery",
+            "pickup"
+        ],
+        "price": "$$",
+        "location": {
+            "address1": "303 W 116th St",
+            "address2": "",
+            "address3": "",
+            "city": "New York",
+            "zip_code": "10026",
+            "country": "US",
+            "state": "NY",
+            "display_address": [
+                "303 W 116th St",
+                "New York, NY 10026"
+            ]
+        },
+        "phone": "+16466493356",
+        "display_phone": "(646) 649-3356",
+        "distance": 414.8911754570219
+    },
+    {
+        "id": "Z-hDHjP4Eza6BA4G97tzVA",
+        "alias": "blvd-bistro-new-york",
+        "name": "BLVD Bistro",
+        "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/lML0a7MlD13TSsKjD-V_pQ/o.jpg",
+        "is_closed": false,
+        "url": "https://www.yelp.com/biz/blvd-bistro-new-york?adjust_creative=l9agJO_xn0aq7qyWKA_uOA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=l9agJO_xn0aq7qyWKA_uOA",
+        "review_count": 680,
+        "categories": [
+            {
+                "alias": "tradamerican",
+                "title": "American (Traditional)"
+            },
+            {
+                "alias": "soulfood",
+                "title": "Soul Food"
+            },
+            {
+                "alias": "breakfast_brunch",
+                "title": "Breakfast & Brunch"
+            }
+        ],
+        "rating": 4,
+        "coordinates": {
+            "latitude": 40.80438,
+            "longitude": -73.9558
+        },
+        "transactions": [
+            "restaurant_reservation",
+            "delivery",
+            "pickup"
+        ],
+        "price": "$$",
+        "location": {
+            "address1": "2149 Frederick Douglass Blvd",
+            "address2": null,
+            "address3": "",
+            "city": "New York",
+            "zip_code": "10026",
+            "country": "US",
+            "state": "NY",
+            "display_address": [
+                "2149 Frederick Douglass Blvd",
+                "New York, NY 10026"
+            ]
+        },
+        "phone": "+12126786200",
+        "display_phone": "(212) 678-6200",
+        "distance": 437.2698975997256
+    },
+    {
+        "id": "NPnWsPxOpG91GHx74S27Uw",
+        "alias": "sottocasa-pizzeria-harlem-new-york",
+        "name": "Sottocasa Pizzeria - Harlem",
+        "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/jttl7IBXFvGGibACqgNOSw/o.jpg",
+        "is_closed": false,
+        "url": "https://www.yelp.com/biz/sottocasa-pizzeria-harlem-new-york?adjust_creative=l9agJO_xn0aq7qyWKA_uOA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=l9agJO_xn0aq7qyWKA_uOA",
+        "review_count": 216,
+        "categories": [
+            {
+                "alias": "pizza",
+                "title": "Pizza"
+            },
+            {
+                "alias": "italian",
+                "title": "Italian"
+            }
+        ],
+        "rating": 4.5,
+        "coordinates": {
+            "latitude": 40.805587,
+            "longitude": -73.947547
+        },
+        "transactions": [],
+        "price": "$$",
+        "location": {
+            "address1": "227 Lenox Ave",
+            "address2": "",
+            "address3": "",
+            "city": "New York",
+            "zip_code": "10027",
+            "country": "US",
+            "state": "NY",
+            "display_address": [
+                "227 Lenox Ave",
+                "New York, NY 10027"
+            ]
+        },
+        "phone": "+16469284870",
+        "display_phone": "(646) 928-4870",
+        "distance": 297.4249074093628
+    },
+    {
+        "id": "RI-tVET-wKFeRNKm4cg0wQ",
+        "alias": "sylvias-restaurant-new-york",
+        "name": "Sylvia's Restaurant",
+        "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/LNlBq8ut6HOl4jqpZGrUsw/o.jpg",
+        "is_closed": false,
+        "url": "https://www.yelp.com/biz/sylvias-restaurant-new-york?adjust_creative=l9agJO_xn0aq7qyWKA_uOA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=l9agJO_xn0aq7qyWKA_uOA",
+        "review_count": 1660,
+        "categories": [
+            {
+                "alias": "southern",
+                "title": "Southern"
+            },
+            {
+                "alias": "soulfood",
+                "title": "Soul Food"
+            },
+            {
+                "alias": "seafood",
+                "title": "Seafood"
+            }
+        ],
+        "rating": 3.5,
+        "coordinates": {
+            "latitude": 40.808609,
+            "longitude": -73.944404
+        },
+        "transactions": [],
+        "price": "$$",
+        "location": {
+            "address1": "328 Malcolm X Blvd",
+            "address2": "",
+            "address3": "",
+            "city": "New York",
+            "zip_code": "10027",
+            "country": "US",
+            "state": "NY",
+            "display_address": [
+                "328 Malcolm X Blvd",
+                "New York, NY 10027"
+            ]
+        },
+        "phone": "+12129960660",
+        "display_phone": "(212) 996-0660",
+        "distance": 622.399433828635
+    },
+    {
+        "id": "Fx_zqaXVgc8BzwIfcbEKkw",
+        "alias": "bos-bagels-new-york",
+        "name": "BO's Bagels",
+        "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/Xus98i_PNynBvRzBiDvJUw/o.jpg",
+        "is_closed": false,
+        "url": "https://www.yelp.com/biz/bos-bagels-new-york?adjust_creative=l9agJO_xn0aq7qyWKA_uOA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=l9agJO_xn0aq7qyWKA_uOA",
+        "review_count": 236,
+        "categories": [
+            {
+                "alias": "bagels",
+                "title": "Bagels"
+            }
+        ],
+        "rating": 4.5,
+        "coordinates": {
+            "latitude": 40.804197,
+            "longitude": -73.954091
+        },
+        "transactions": [],
+        "price": "$",
+        "location": {
+            "address1": "235 W 116th St",
+            "address2": null,
+            "address3": "",
+            "city": "New York",
+            "zip_code": "10026",
+            "country": "US",
+            "state": "NY",
+            "display_address": [
+                "235 W 116th St",
+                "New York, NY 10026"
+            ]
+        },
+        "phone": "+19179028345",
+        "display_phone": "(917) 902-8345",
+        "distance": 326.8838801524478
+    },
+    {
+        "id": "4rWJGwb3rjDoZHA0AECa5A",
+        "alias": "melbas-new-york",
+        "name": "Melba's",
+        "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/lvjold6TamlUFKiu7YT26Q/o.jpg",
+        "is_closed": false,
+        "url": "https://www.yelp.com/biz/melbas-new-york?adjust_creative=l9agJO_xn0aq7qyWKA_uOA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=l9agJO_xn0aq7qyWKA_uOA",
+        "review_count": 911,
+        "categories": [
+            {
+                "alias": "southern",
+                "title": "Southern"
+            },
+            {
+                "alias": "tradamerican",
+                "title": "American (Traditional)"
+            },
+            {
+                "alias": "soulfood",
+                "title": "Soul Food"
+            }
+        ],
+        "rating": 4,
+        "coordinates": {
+            "latitude": 40.8031468838453,
+            "longitude": -73.9565069228411
+        },
+        "transactions": [
+            "delivery",
+            "pickup"
+        ],
+        "price": "$$",
+        "location": {
+            "address1": "300 W 114th St",
+            "address2": "",
+            "address3": "",
+            "city": "New York",
+            "zip_code": "10026",
+            "country": "US",
+            "state": "NY",
+            "display_address": [
+                "300 W 114th St",
+                "New York, NY 10026"
+            ]
+        },
+        "phone": "+12128647777",
+        "display_phone": "(212) 864-7777",
+        "distance": 566.8791681172451
+    },
+    {
+        "id": "5mOzZ17qU_8ijlP54Q206Q",
+        "alias": "safari-restaurant-nyc-new-york",
+        "name": "Safari Restaurant NYC",
+        "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/L5VXttqp4JSzuyrCD3_IQw/o.jpg",
+        "is_closed": false,
+        "url": "https://www.yelp.com/biz/safari-restaurant-nyc-new-york?adjust_creative=l9agJO_xn0aq7qyWKA_uOA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=l9agJO_xn0aq7qyWKA_uOA",
+        "review_count": 168,
+        "categories": [
+            {
+                "alias": "african",
+                "title": "African"
+            },
+            {
+                "alias": "halal",
+                "title": "Halal"
+            }
+        ],
+        "rating": 4.5,
+        "coordinates": {
+            "latitude": 40.80381,
+            "longitude": -73.9535
+        },
+        "transactions": [
+            "pickup"
+        ],
+        "price": "$$",
+        "location": {
+            "address1": "219 W 116th St",
+            "address2": null,
+            "address3": "",
+            "city": "New York",
+            "zip_code": "10026",
+            "country": "US",
+            "state": "NY",
+            "display_address": [
+                "219 W 116th St",
+                "New York, NY 10026"
+            ]
+        },
+        "phone": "+16469644252",
+        "display_phone": "(646) 964-4252",
+        "distance": 319.7333597435444
+    },
+    {
+        "id": "Fl2z1edJw3MONc9rERWRMg",
+        "alias": "b2-harlem-new-york",
+        "name": "B2 Harlem",
+        "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/sqm2sPlJonu--X6dq0XTaQ/o.jpg",
+        "is_closed": false,
+        "url": "https://www.yelp.com/biz/b2-harlem-new-york?adjust_creative=l9agJO_xn0aq7qyWKA_uOA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=l9agJO_xn0aq7qyWKA_uOA",
+        "review_count": 219,
+        "categories": [
+            {
+                "alias": "seafood",
+                "title": "Seafood"
+            },
+            {
+                "alias": "wine_bars",
+                "title": "Wine Bars"
+            },
+            {
+                "alias": "breakfast_brunch",
+                "title": "Breakfast & Brunch"
+            }
+        ],
+        "rating": 4,
+        "coordinates": {
+            "latitude": 40.80613,
+            "longitude": -73.95317
+        },
+        "transactions": [
+            "restaurant_reservation"
+        ],
+        "price": "$$",
+        "location": {
+            "address1": "271 W 119th St",
+            "address2": "",
+            "address3": null,
+            "city": "New York",
+            "zip_code": "10026",
+            "country": "US",
+            "state": "NY",
+            "display_address": [
+                "271 W 119th St",
+                "New York, NY 10026"
+            ]
+        },
+        "phone": "+12122802248",
+        "display_phone": "(212) 280-2248",
+        "distance": 185.73777694772824
+    },
+    {
+        "id": "MH08_pIRKsUSwfkVYxUE7w",
+        "alias": "vinatería-new-york-4",
+        "name": "VINATERÍA",
+        "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/ZuDNNIrIaubguA7w3XeZxg/o.jpg",
+        "is_closed": false,
+        "url": "https://www.yelp.com/biz/vinater%C3%ADa-new-york-4?adjust_creative=l9agJO_xn0aq7qyWKA_uOA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=l9agJO_xn0aq7qyWKA_uOA",
+        "review_count": 386,
+        "categories": [
+            {
+                "alias": "italian",
+                "title": "Italian"
+            },
+            {
+                "alias": "spanish",
+                "title": "Spanish"
+            },
+            {
+                "alias": "seafood",
+                "title": "Seafood"
+            }
+        ],
+        "rating": 4,
+        "coordinates": {
+            "latitude": 40.8064392068585,
+            "longitude": -73.9540110111145
+        },
+        "transactions": [],
+        "price": "$$",
+        "location": {
+            "address1": "2211 Frederick Douglass Blvd",
+            "address2": null,
+            "address3": "",
+            "city": "New York",
+            "zip_code": "10026",
+            "country": "US",
+            "state": "NY",
+            "display_address": [
+                "2211 Frederick Douglass Blvd",
+                "New York, NY 10026"
+            ]
+        },
+        "phone": "+12126628462",
+        "display_phone": "(212) 662-8462",
+        "distance": 255.0077207710082
+    },
+    {
+        "id": "uCsyRxfIfiRqQQuK_JlfZA",
+        "alias": "harlem-tavern-new-york-2",
+        "name": "Harlem Tavern",
+        "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/H6XLSHrP5LtyjFgz6mPGRw/o.jpg",
+        "is_closed": false,
+        "url": "https://www.yelp.com/biz/harlem-tavern-new-york-2?adjust_creative=l9agJO_xn0aq7qyWKA_uOA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=l9agJO_xn0aq7qyWKA_uOA",
+        "review_count": 1154,
+        "categories": [
+            {
+                "alias": "pubs",
+                "title": "Pubs"
+            },
+            {
+                "alias": "newamerican",
+                "title": "American (New)"
+            },
+            {
+                "alias": "breakfast_brunch",
+                "title": "Breakfast & Brunch"
+            }
+        ],
+        "rating": 3.5,
+        "coordinates": {
+            "latitude": 40.8046999,
+            "longitude": -73.95558
+        },
+        "transactions": [],
+        "price": "$$",
+        "location": {
+            "address1": "2153 Frederick Douglass Blvd",
+            "address2": "",
+            "address3": "",
+            "city": "New York",
+            "zip_code": "10026",
+            "country": "US",
+            "state": "NY",
+            "display_address": [
+                "2153 Frederick Douglass Blvd",
+                "New York, NY 10026"
+            ]
+        },
+        "phone": "+12128664500",
+        "display_phone": "(212) 866-4500",
+        "distance": 403.3176098086037
+    },
+    {
+        "id": "YNgBR2pGWmMZAYFQbByODA",
+        "alias": "lee-lees-baked-goods-new-york",
+        "name": "Lee Lee's Baked Goods",
+        "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/5mqqTpQoWbJQklOYRbPJyA/o.jpg",
+        "is_closed": false,
+        "url": "https://www.yelp.com/biz/lee-lees-baked-goods-new-york?adjust_creative=l9agJO_xn0aq7qyWKA_uOA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=l9agJO_xn0aq7qyWKA_uOA",
+        "review_count": 139,
+        "categories": [
+            {
+                "alias": "bakeries",
+                "title": "Bakeries"
+            },
+            {
+                "alias": "desserts",
+                "title": "Desserts"
+            }
+        ],
+        "rating": 4.5,
+        "coordinates": {
+            "latitude": 40.8057,
+            "longitude": -73.95408
+        },
+        "transactions": [],
+        "price": "$",
+        "location": {
+            "address1": "283 W 118th St",
+            "address2": "",
+            "address3": "",
+            "city": "New York",
+            "zip_code": "10026",
+            "country": "US",
+            "state": "NY",
+            "display_address": [
+                "283 W 118th St",
+                "New York, NY 10026"
+            ]
+        },
+        "phone": "+19174936633",
+        "display_phone": "(917) 493-6633",
+        "distance": 250.06687872147123
+    },
+    {
+        "id": "1oSScsLRONvHppf8i67yoQ",
+        "alias": "cafe-at-apollo-new-york",
+        "name": "Cafe at Apollo",
+        "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/-PyssTLD9zDlZRM-K3d9nA/o.jpg",
+        "is_closed": false,
+        "url": "https://www.yelp.com/biz/cafe-at-apollo-new-york?adjust_creative=l9agJO_xn0aq7qyWKA_uOA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=l9agJO_xn0aq7qyWKA_uOA",
+        "review_count": 184,
+        "categories": [
+            {
+                "alias": "musicvenues",
+                "title": "Music Venues"
+            },
+            {
+                "alias": "newamerican",
+                "title": "American (New)"
+            },
+            {
+                "alias": "dinnertheater",
+                "title": "Dinner Theater"
+            }
+        ],
+        "rating": 4.5,
+        "coordinates": {
+            "latitude": 40.80991,
+            "longitude": -73.95013
+        },
+        "transactions": [],
+        "price": "$$",
+        "location": {
+            "address1": "253 W 125th St",
+            "address2": "Inside Apollo Theater",
+            "address3": "",
+            "city": "New York",
+            "zip_code": "10027",
+            "country": "US",
+            "state": "NY",
+            "display_address": [
+                "253 W 125th St",
+                "Inside Apollo Theater",
+                "New York, NY 10027"
+            ]
+        },
+        "phone": "+12125315300",
+        "display_phone": "(212) 531-5300",
+        "distance": 455.0354455857192
+    },
+    {
+        "id": "-AixNVwQogQlGjWKttuw5w",
+        "alias": "double-dutch-espresso-new-york",
+        "name": "Double Dutch Espresso",
+        "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/EXGTEV1KEjw2cyFWAo0ZEQ/o.jpg",
+        "is_closed": false,
+        "url": "https://www.yelp.com/biz/double-dutch-espresso-new-york?adjust_creative=l9agJO_xn0aq7qyWKA_uOA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=l9agJO_xn0aq7qyWKA_uOA",
+        "review_count": 203,
+        "categories": [
+            {
+                "alias": "bagels",
+                "title": "Bagels"
+            },
+            {
+                "alias": "coffee",
+                "title": "Coffee & Tea"
+            },
+            {
+                "alias": "internetcafe",
+                "title": "Internet Cafes"
+            }
+        ],
+        "rating": 4,
+        "coordinates": {
+            "latitude": 40.805824,
+            "longitude": -73.953964
+        },
+        "transactions": [],
+        "price": "$$",
+        "location": {
+            "address1": "2194 Frederick Douglass Blvd",
+            "address2": null,
+            "address3": "",
+            "city": "New York",
+            "zip_code": "10026",
+            "country": "US",
+            "state": "NY",
+            "display_address": [
+                "2194 Frederick Douglass Blvd",
+                "New York, NY 10026"
+            ]
+        },
+        "phone": "+16464298834",
+        "display_phone": "(646) 429-8834",
+        "distance": 249.18796300249713
+    },
+    {
+        "id": "gyWc5qJRvu26LVQIShdR4Q",
+        "alias": "babbalucci-new-york",
+        "name": "Babbalucci",
+        "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/3MOwPG1cpOLHVisHpjFazw/o.jpg",
+        "is_closed": false,
+        "url": "https://www.yelp.com/biz/babbalucci-new-york?adjust_creative=l9agJO_xn0aq7qyWKA_uOA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=l9agJO_xn0aq7qyWKA_uOA",
+        "review_count": 344,
+        "categories": [
+            {
+                "alias": "italian",
+                "title": "Italian"
+            }
+        ],
+        "rating": 4,
+        "coordinates": {
+            "latitude": 40.80894,
+            "longitude": -73.94496
+        },
+        "transactions": [
+            "delivery",
+            "pickup"
+        ],
+        "price": "$$",
+        "location": {
+            "address1": "331 Lenox Ave",
+            "address2": "",
+            "address3": "",
+            "city": "New York",
+            "zip_code": "10027",
+            "country": "US",
+            "state": "NY",
+            "display_address": [
+                "331 Lenox Ave",
+                "New York, NY 10027"
+            ]
+        },
+        "phone": "+16469186572",
+        "display_phone": "(646) 918-6572",
+        "distance": 601.052195480838
+    },
+    {
+        "id": "KfPqpZb7dCRlgao5fQXrcA",
+        "alias": "sugar-hill-creamery-new-york",
+        "name": "Sugar Hill Creamery",
+        "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/u7CiII2mpogRi1-bZnf0dA/o.jpg",
+        "is_closed": false,
+        "url": "https://www.yelp.com/biz/sugar-hill-creamery-new-york?adjust_creative=l9agJO_xn0aq7qyWKA_uOA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=l9agJO_xn0aq7qyWKA_uOA",
+        "review_count": 124,
+        "categories": [
+            {
+                "alias": "icecream",
+                "title": "Ice Cream & Frozen Yogurt"
+            },
+            {
+                "alias": "coffee",
+                "title": "Coffee & Tea"
+            },
+            {
+                "alias": "desserts",
+                "title": "Desserts"
+            }
+        ],
+        "rating": 4.5,
+        "coordinates": {
+            "latitude": 40.80407,
+            "longitude": -73.94785
+        },
+        "transactions": [],
+        "price": "$$",
+        "location": {
+            "address1": "184 Lenox Ave",
+            "address2": null,
+            "address3": "",
+            "city": "New York",
+            "zip_code": "10026",
+            "country": "US",
+            "state": "NY",
+            "display_address": [
+                "184 Lenox Ave",
+                "New York, NY 10026"
+            ]
+        },
+        "phone": "+12126349004",
+        "display_phone": "(212) 634-9004",
+        "distance": 351.35789478234926
+    }
+]
