@@ -4,7 +4,7 @@
 	<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
 	<meta charset="utf-8">
 	<script src="data.js"></script>
-	
+	<script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
 	<script>
 	 function getUrlVars() {
 	     var vars = {};
@@ -13,6 +13,12 @@
 	     });
 	     return vars;
 	 }
+	 var page2_data = {
+	     names: apt_names,
+	     addresses: apt_addresses,
+	     schools: school_infos,
+	 };
+	 console.log(apt_names);
 	</script>
 	<link rel="stylesheet" type="text/css" href="styles1.css">
 	<title>Team 127</title>
@@ -36,7 +42,7 @@
 		<label for="traffic3" class="option">3</label>
 		<input class="selectopt" name="traffic" type="radio" id="traffic4">
 		<label for="traffic4" class="option">4</label>
-		<input class="selectopt" name="traffic" type="radio" id="traffic5" checked>
+		<input class="selectopt" name="traffic" type="radio" id="traffic5">
 		<label for="traffic5" class="option">5</label>
 		<input class="selectopt" name="traffic" type="radio" id="traffic6">
 		<label for="traffic6" class="option">6</label>
@@ -59,7 +65,7 @@
 		<label for="education3" class="option">3</label>
 		<input class="selectopt" name="education" type="radio" id="education4">
 		<label for="education4" class="option">4</label>
-		<input class="selectopt" name="education" type="radio" id="education5" checked>
+		<input class="selectopt" name="education" type="radio" id="education5">
 		<label for="education5" class="option">5</label>
 		<input class="selectopt" name="education" type="radio" id="education6">
 		<label for="education6" class="option">6</label>
@@ -72,7 +78,7 @@
 		<input class="selectopt" name="education" type="radio" id="education10" >
 		<label for="education10" class="option">10</label>
 	    </div>
-	    <p>environment&nbsp;</p>
+	    <p>Environment&nbsp;</p>
 	    <div class="select" tabindex="1">
 		<input class="selectopt" name="environment" type="radio" id="environment1">
 		<label for="environment1" class="option">1</label>
@@ -82,7 +88,7 @@
 		<label for="environment3" class="option">3</label>
 		<input class="selectopt" name="environment" type="radio" id="environment4">
 		<label for="environment4" class="option">4</label>
-		<input class="selectopt" name="environment" type="radio" id="environment5" checked>
+		<input class="selectopt" name="environment" type="radio" id="environment5">
 		<label for="environment5" class="option">5</label>
 		<input class="selectopt" name="environment" type="radio" id="environment6">
 		<label for="environment6" class="option">6</label>
@@ -105,7 +111,7 @@
 		<label for="safety3" class="option">3</label>
 		<input class="selectopt" name="safety" type="radio" id="safety4">
 		<label for="safety4" class="option">4</label>
-		<input class="selectopt" name="safety" type="radio" id="safety5" checked>
+		<input class="selectopt" name="safety" type="radio" id="safety5">
 		<label for="safety5" class="option">5</label>
 		<input class="selectopt" name="safety" type="radio" id="safety6">
 		<label for="safety6" class="option">6</label>
@@ -118,27 +124,214 @@
 		<input class="selectopt" name="safety" type="radio" id="safety10">
 		<label for="safety10" class="option">10</label>
 	    </div>
-	    <p>Food&nbsp;</p>
-	    <div class="select" tabindex="1">
-		<input class="selectopt" name="yelp" type="radio" id="yelp1">
-		<label for="yelp1" class="option">Chinese</label>
-		<input class="selectopt" name="yelp" type="radio" id="yelp2">
-		<label for="yelp2" class="option">Thai</label>
-		<input class="selectopt" name="yelp" type="radio" id="yelp3">
-		<label for="yelp3" class="option">Japanese</label>
-		<input class="selectopt" name="yelp" type="radio" id="yelp4">
-		<label for="yelp4" class="option">American</label>
-		<input class="selectopt" name="yelp" type="radio" id="yelp5" checked>
-		<label for="yelp5" class="option">Mexican</label>
-		<input class="selectopt" name="yelp" type="radio" id="yelp6">
-		<label for="yelp6" class="option">Italian</label>
-	    </div>
 	    <button class="update_image" onclick="update()"><img src="img/update.png"></button>
 	    <script type="text/javascript">
+	     var traffic_weight = getUrlVars()['traffic'];
+	     var education_weight = getUrlVars()['education'];
+	     var environment_weight = getUrlVars()['environment'];
+	     var safety_weight = getUrlVars()['safety'];
+	     switch(traffic_weight) {
+		 case "1":
+		     trafficbtn = document.getElementById("traffic1");
+		     trafficbtn.checked = true;
+		     break;
+		 case "2":
+		     trafficbtn = document.getElementById("traffic2");
+		     trafficbtn.checked = true;
+		     break;
+		 case "3":
+		     trafficbtn = document.getElementById("traffic3");
+		     trafficbtn.checked = true;
+		     break;
+		 case "4":
+		     trafficbtn = document.getElementById("traffic4");
+		     trafficbtn.checked = true;
+		     break;
+		 case "5":
+		     trafficbtn = document.getElementById("traffic5");
+		     trafficbtn.checked = true;
+		     break;
+		 case "6":
+		     trafficbtn = document.getElementById("traffic6");
+		     trafficbtn.checked = true;
+		     break;
+		 case "7":
+		     trafficbtn = document.getElementById("traffic7");
+		     trafficbtn.checked = true;
+		     break;
+		 case "8":
+		     trafficbtn = document.getElementById("traffic8");
+		     trafficbtn.checked = true;
+		     break;
+		 case "9":
+		     trafficbtn = document.getElementById("traffic9");
+		     trafficbtn.checked = true;
+		     break;
+		 case "10":
+		     trafficbtn = document.getElementById("traffic10");
+		     trafficbtn.checked = true;
+		     break;
+		 default:
+		     trafficbtn = document.getElementById("traffic5");
+		     trafficbtn.checked = true;
+	     }
+	     switch(education_weight) {
+		 case "1":
+		     educationbtn = document.getElementById("education1");
+		     educationbtn.checked = true;
+		     break;
+		 case "2":
+		     educationbtn = document.getElementById("education2");
+		     educationbtn.checked = true;
+		     break;
+		 case "3":
+		     educationbtn = document.getElementById("education3");
+		     educationbtn.checked = true;
+		     break;
+		 case "4":
+		     educationbtn = document.getElementById("education4");
+		     educationbtn.checked = true;
+		     break;
+		 case "5":
+		     educationbtn = document.getElementById("education5");
+		     educationbtn.checked = true;
+		     break;
+		 case "6":
+		     educationbtn = document.getElementById("education6");
+		     educationbtn.checked = true;
+		     break;
+		 case "7":
+		     educationbtn = document.getElementById("education7");
+		     educationbtn.checked = true;
+		     break;
+		 case "8":
+		     educationbtn = document.getElementById("education8");
+		     educationbtn.checked = true;
+		     break;
+		 case "9":
+		     educationbtn = document.getElementById("education9");
+		     educationbtn.checked = true;
+		     break;
+		 case "10":
+		     educationbtn = document.getElementById("education10");
+		     educationbtn.checked = true;
+		     break;
+		 default:
+		     educationbtn = document.getElementById("education5");
+		     educationbtn.checked = true;
+	     }
+	     switch(environment_weight) {
+		 case "1":
+		     environmentbtn = document.getElementById("environment1");
+		     environmentbtn.checked = true;
+		     break;
+		 case "2":
+		     environmentbtn = document.getElementById("environment2");
+		     environmentbtn.checked = true;
+		     break;
+		 case "3":
+		     environmentbtn = document.getElementById("environment3");
+		     environmentbtn.checked = true;
+		     break;
+		 case "4":
+		     environmentbtn = document.getElementById("environment4");
+		     environmentbtn.checked = true;
+		     break;
+		 case "5":
+		     environmentbtn = document.getElementById("environment5");
+		     environmentbtn.checked = true;
+		     break;
+		 case "6":
+		     environmentbtn = document.getElementById("environment6");
+		     environmentbtn.checked = true;
+		     break;
+		 case "7":
+		     environmentbtn = document.getElementById("environment7");
+		     environmentbtn.checked = true;
+		     break;
+		 case "8":
+		     environmentbtn = document.getElementById("environment8");
+		     environmentbtn.checked = true;
+		     break;
+		 case "9":
+		     environmentbtn = document.getElementById("environment9");
+		     environmentbtn.checked = true;
+		     break;
+		 case "10":
+		     environmentbtn = document.getElementById("environment10");
+		     environmentbtn.checked = true;
+		     break;
+		 default:
+		     environmentbtn = document.getElementById("environment5");
+		     environmentbtn.checked = true;
+	     }
+	     switch(safety_weight) {
+		 case "1":
+		     safetybtn = document.getElementById("safety1");
+		     safetybtn.checked = true;
+		     break;
+		 case "2":
+		     safetybtn = document.getElementById("safety2");
+		     safetybtn.checked = true;
+		     break;
+		 case "3":
+		     safetybtn = document.getElementById("safety3");
+		     safetybtn.checked = true;
+		     break;
+		 case "4":
+		     safetybtn = document.getElementById("safety4");
+		     safetybtn.checked = true;
+		     break;
+		 case "5":
+		     safetybtn = document.getElementById("safety5");
+		     safetybtn.checked = true;
+		     break;
+		 case "6":
+		     safetybtn = document.getElementById("safety6");
+		     safetybtn.checked = true;
+		     break;
+		 case "7":
+		     safetybtn = document.getElementById("safety7");
+		     safetybtn.checked = true;
+		     break;
+		 case "8":
+		     safetybtn = document.getElementById("safety8");
+		     safetybtn.checked = true;
+		     break;
+		 case "9":
+		     safetybtn = document.getElementById("safety9");
+		     safetybtn.checked = true;
+		     break;
+		 case "10":
+		     safetybtn = document.getElementById("safety10");
+		     safetybtn.checked = true;
+		     break;
+		 default:
+		     safetybtn = document.getElementById("safety5");
+		     safetybtn.checked = true;
+	     }
+	     
+	     
+	     
+	     console.log(traffic_weight);
+	     console.log(education_weight);
+	     console.log(environment_weight);
+	     console.log(safety_weight);
+	     
+	     
 	     function update(){
-		 console.log("updating");
-		 var a = $("input[name='Safety']:checked").val();
-		 console.log(a);
+		 var args_holder = [];
+		 $("input[type='radio']:checked").each(function() {
+		     var idVal = $(this).attr("id");
+		     args_holder.push($("label[for='"+idVal+"']").text());
+		 });
+		 var new_traffic_weight = args_holder[0];
+		 var new_education_weight = args_holder[1];
+		 var new_environment_weight = args_holder[2];
+		 var new_safety_weight = args_holder[3];
+		 console.log("update");
+		 window.location.href = "Page2.html?traffic="+new_traffic_weight+"&education="+new_education_weight+"&environment="+new_environment_weight+"&safety="+new_safety_weight;
+		 apt_names=["new name"];
 	     }
 	    </script>
 	    </div>
@@ -154,7 +347,6 @@
 
  		</div>
 		<script>
-		 console.log(apt_images[0][0]);
 		 for (i=0;i<apt_addresses.length;i++)
 		 {
 		     document.write(i+1);
