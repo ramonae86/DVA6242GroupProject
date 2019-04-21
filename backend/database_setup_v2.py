@@ -64,7 +64,7 @@ conn.commit()
 # all datas
 #Option Name,Contact,Address,Size,Rent,Monthly Fees,One Time Fees,Pet Policy,Distance,Duration,Parking,Gym,Kitchen,
 #Amenities,Features,Living Space,Lease Info,Services,Property Info,Indoor Info,Outdoor Info,Images,Description
-onn.cursor().execute('''CREATE TABLE Apt (
+conn.cursor().execute('''CREATE TABLE Apt (
                            AptID INTEGER NOT NULL AUTO_INCREMENT,
                            Name varchar(200) NOT NULL,
                            Contact varchar(20),
