@@ -1,0 +1,11 @@
+# count school by zipcode
+
+select Count(*) from School Where Zipcode = 11109;
+
+# enter zipcode, return latitude and longitude of all schools in this zipcode
+
+select Latitude, Longitude from School Where Zipcode = 11109;
+
+# enter zip code, return all apt in the zone
+
+select * from Apt WHERE Address LIKE "%10016%";
