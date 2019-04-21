@@ -5,35 +5,101 @@
   <meta name="viewport" content="initial-scale=1.0">
   <meta charset="utf-8">
   <script src="apartments.js"></script>
+  <script src="data.js"></script>
   <script src="details.js"></script>
-  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" type="text/css" href="styles1.css">
+  <link rel="stylesheet" type="text/css" href="styles2.css">
 <!--   <style></style>
  --></head>
 <body>
 
 <div id="logo_container">
       <a href="index.html">
-    <img id="logo" src="img/logo.jpg" align="middle">
+    <img id="logo" src="img/logo1.png" align="middle">
       </a>
 </div>
+  <div id="name_and_address">
+      <script>
+      document.write('<h1>' + '  '+name+'</h1>' + '<p> Address: '+address+'</p>')
+     </script>
+     
+  </div>
 
 <div id="info">
-    <div class="name_and_address">
-      <h1>[Herald Towers](https://www.apartments.com/herald-towers-new-york-ny/rjlbf92/)</h1>
-      <p>[50 W 34th St, New York, NY 10001](https://www.google.com/maps/dir/'350+5th+Ave+New+York,+NY+10118'/50+W+34th+St,+New+York,+NY+10001/data=!4m2!4m1!3e2)</p>
-    </div>
+  <div class="features">
+    <div class="slideshow-container">
 
-    <div class="features">
-      <img class="apt_img" src="https://images1.apartments.com/i2/pA7OU9D2pbCA2cIJcBHGdAgnvH46dcAdLaSBY5WWybE/111/518-w-204th-st-unit-1-new-york-ny-primary-photo.jpg" align="middle">
-      <br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>
-    </div>
+      <script>
+        for(i=0;i<apt_images.length;i++){
+          document.write('<div class="mySlides fade">' +  '<img src=' + apt_images[i] + '> </div>')
+        }
+      </script>
+<!--       <div class="mySlides fade">
+        <img src="img/indexBackground.jpg" height=300px height=400px>
+       </div>
 
-    <div class="contact">
+      <div class="mySlides fade">
+        <img src="img/logo.jpg" height=300px height=400px>
+       </div> -->
+
+      <!-- Next and previous buttons -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+    <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    // Thumbnail image controls
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1} 
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none"; 
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block"; 
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
+
+<!--       <script>
+      document.write('<img class="apt_img" src=' + images[1] + '>');
+      </script> -->
+
+
+
+      <div class='font1'>
+
+      <p><br>Phone number:<br>Rent:<br>Score Traffic:<br>Score Education:<br>Score Environment:<br>Score Safety:<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br>features<br></p>
+    </div>
+  </div>
+
+<!--     <div class="contact">
       <div class="contact_container" style="background: #2dc100; height:100px; width: 100%; border-radius:10px;">
         <img class="phone_img" src="./img/phone.png" height="100px">
         <span class="phone_number">646-868-3032</span>
       </div>
-    </div>
+    </div> -->
 
     <div id="map">
       <script>
@@ -41,11 +107,10 @@
       // var labelIndex = 0;
 
       var markers = [];
+      var markers_school=[];
       var infowindows = [];
+      var infowindows_school = [];
 
-      // var time_walking = []
-      // var time_Bicycling = []
-      // var time_driving = []
 
       var restaurants = [];
       var names = [];
@@ -110,6 +175,34 @@
         var yelp_time_walks = getTimesWalk(yelp_coordinates,map);
 
         var yelp_strings=[];
+        var school_strings=[];
+
+        for(i=0; i<school_infos.length;i++){
+          var string ='<div id="iw-container">' +
+                        // '<div class="iw-subTitle">'+school_infos[i]['name']+'</div>' +
+                        '<div class="iw-content">' +
+                          '<div class="iw-subTitle">' + school_infos[i]['name'] +'</div>' +
+                        //   '<img src='+image_urls[i] +' height="120">' + '<br>'+
+                        //     // '<p>LLLL</p>' +
+                        //   // '<div class="iw-subTitle">Details</div>' +
+                        //     '<p> Rating: ' + ratings[i] +
+                        //     '<br>Phone: ' + display_phones[i] +
+                        //     '<br>Price: ' + prices[i] +
+                        //     '<br>Transit time: ' + yelp_time_transits[i] +
+                        //     '<br>Walk time: ' + yelp_time_walks[i] +
+
+                        //     // '<br>Yelp link: ' + urls[i] + '</p>'+
+                        //     '<br><a target="_blank" href=' + urls[i] + '>Click here to open this in Yelp</a>' + '</p>'+
+                        //   '</div>' +
+                          '<div class="iw-bottom-gradient"></div>' +
+                        '</div>' + 
+                        '</div>';
+          school_strings.push(string);
+          addMarkerSchool({lat:school_infos[i]['lat'],lng:school_infos[i]['lng']}, map, school_strings[i])
+
+        }
+
+
 
 
         Promise.all(yelp_time_transits)     
@@ -128,22 +221,24 @@
               //parseInt(("6 mins").replace(/(^\d+)(.+$)/i,'$1'), 10)
               // parseInt((yelp_time[i]).replace(/(^\d+)(.+$)/i,'$1'), 10)
 
+            console.log(yelp_time_transits)
+            console.log(yelp_time_walks)
             for(i=0; i<yelp.length;i++){
               var string ='<div id="iw-container">' +
                             '<div class="iw-subTitle">'+names[i]+'</div>' +
                             '<div class="iw-content">' +
                               // '<div class="iw-subTitle">' + ratings[i] +'</div>' +
-                              '<img src='+image_urls[i] +' height="120">' + '<br>'+
+                              '<a target="_blank" href=' + urls[i] + '><img src='+image_urls[i] +' height="120"></a>' + '<br>'+
                                 // '<p>LLLL</p>' +
                               // '<div class="iw-subTitle">Details</div>' +
                                 '<p> Rating: ' + ratings[i] +
                                 '<br>Phone: ' + display_phones[i] +
                                 '<br>Price: ' + prices[i] +
                                 '<br>Transit time: ' + yelp_time_transits[i] +
-                                '<br>Walk time: ' + yelp_time_walks[i] +
+                                '<br>Walk time: ' + yelp_time_walks[i] + '</p>'+
 
                                 // '<br>Yelp link: ' + urls[i] + '</p>'+
-                                '<br><a target="_blank" href=' + urls[i] + '>Click here to open this in Yelp</a>' + '</p>'+
+                                // '<br><a target="_blank" href=' + urls[i] + '>Click here to open this in Yelp</a>' + '</p>'+
                               '</div>' +
                               '<div class="iw-bottom-gradient"></div>' +
                             '</div>';
@@ -154,7 +249,7 @@
                 position: apt,
                 map: map,
                 title: 'apartment',
-                icon: 'marker_house_pink.png'
+                icon: 'img/marker_house_pink.png'
               });
 
               for (i = 0; i < yelp_coordinates.length; i++) { 
@@ -178,6 +273,14 @@
         return 'img/marker_restaurant_large.png'
       }
 
+      function normalSchool() {
+       //return 'map-icons.png'
+         return 'img/marker_school.png'
+      }
+
+      function highlightedSchool() {
+        return 'img/marker_school_large.png'
+      }
       function normalOpacity() {
         return 0.8
       }
@@ -187,16 +290,16 @@
       }
 
      function getTimesTransit(yelp_coordinates, map) {
-          let timeData = [];
+          let timeDataT = [];
           let latValue;
           for(let i = 0; i < yelp_coordinates.length; i++){
               console.log(yelp_coordinates[i]);
               console.log(YelpTimeTransit(yelp_coordinates[i], serviceTimeTransit, map));
-              timeData.push(YelpTimeTransit(yelp_coordinates[i], serviceTimeTransit, map));
+              timeDataT.push(YelpTimeTransit(yelp_coordinates[i], serviceTimeTransit, map));
               // console.log(timeData);
           }
-          console.log(timeData)
-          return timeData // array of promises
+          console.log(timeDataT)
+          return timeDataT // array of promises
       }
 
       function YelpTimeTransit(coordinate, service, mainMap) {
@@ -216,28 +319,28 @@
               for (var i = 0; i < 1; i++) {
                 var results = response.rows[i].elements;            
                 for (var j = 0; j < results.length; j++) {
-                  var time = results[j]['duration']['text'];
+                  var timeT = results[j]['duration']['text'];
                   // console.log(times);
-                  resolve(time);
+                  resolve(timeT);
                 }
               }
-              // console.log(time);
+              console.log(timeT);
             }
           })
           })
       } 
 
      function getTimesWalk(yelp_coordinates, map) {
-          let timeData = [];
+          let timeDataW = [];
           let latValue;
           for(let i = 0; i < yelp_coordinates.length; i++){
               console.log(yelp_coordinates[i]);
-              console.log(YelpTimeTransit(yelp_coordinates[i], serviceTimeWalk, map));
-              timeData.push(YelpTimeTransit(yelp_coordinates[i], serviceTimeWalk, map));
+              console.log(YelpTimeWalk(yelp_coordinates[i], serviceTimeWalk, map));
+              timeDataW.push(YelpTimeWalk(yelp_coordinates[i], serviceTimeWalk, map));
               // console.log(timeData);
           }
-          console.log(timeData)
-          return timeData // array of promises
+          console.log(timeDataW)
+          return timeDataW // array of promises
       }
 
       function YelpTimeWalk(coordinate, service, mainMap) {
@@ -245,7 +348,7 @@
           serviceTimeWalk.getDistanceMatrix({
             origins: [apt],
             destinations: [coordinate],
-            travelMode: 'Walk',
+            travelMode: 'WALKING',
             unitSystem: google.maps.UnitSystem.METRIC,
           }, function(response, status) {
             if (status !== 'OK') {
@@ -257,12 +360,12 @@
               for (var i = 0; i < 1; i++) {
                 var results = response.rows[i].elements;            
                 for (var j = 0; j < results.length; j++) {
-                  var time = results[j]['duration']['text'];
+                  var timeW = results[j]['duration']['text'];
                   // console.log(times);
-                  resolve(time);
+                  resolve(timeW);
                 }
               }
-              // console.log(time);
+              console.log(timeW);
             }
           })
           })
@@ -292,7 +395,7 @@
         marker.addListener('click', function () {
             for (var j = 0; j < markers.length; j++) {
               markers[j].setIcon(normalIcon());
-              marker.setOpacity(normalOpacity());
+              markers[j].setOpacity(normalOpacity());
               infowindows[j].close(map, markers[j])
             }
             marker.setIcon(highlightedIcon());
@@ -302,6 +405,41 @@
 
         infowindows.push(infowindow)
         markers.push(marker);
+      }
+  
+
+    function addMarkerSchool(location, map, string) {
+       if(infowindow_school)
+       infowindow_school.close();
+       var infowindow_school = new google.maps.InfoWindow({content: string});
+        var marker_school = new google.maps.Marker({
+          position: location,
+          // label: labels[labelIndex++ % labels.length],
+          map: map,
+          icon: normalSchool(),  
+          opacity: normalOpacity()      
+        });
+
+ 
+        google.maps.event.addListener(map, "click", function(event) {
+            infowindow_school.close();
+            marker_school.setIcon(normalSchool());
+            marker_school.setOpacity(normalOpacity());
+        });
+
+        marker_school.addListener('click', function () {
+            for (var j = 0; j < markers_school.length; j++) {
+              markers_school[j].setIcon(normalSchool());
+              markers_school[j].setOpacity(normalOpacity());
+              infowindows_school[j].close(map, markers_school[j])
+            }
+            marker_school.setIcon(highlightedSchool());
+            marker_school.setOpacity(highlightedOpacity());
+            infowindow_school.open(map, marker_school);
+        })
+
+        infowindows_school.push(infowindow_school);
+        markers_school.push(marker_school);
       }
   }
     </script>

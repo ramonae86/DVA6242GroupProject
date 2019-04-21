@@ -3,10 +3,8 @@
 <head>
 	<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
 	<meta charset="utf-8">
-	 <script src="data.js"></script>
 	 <script src="apartments.js"></script>
-	 <link rel="stylesheet" type="text/css" href="styles1.css">
-	 <link rel="stylesheet" type="text/css" href="styles2.css">
+	 <link rel="stylesheet" type="text/css" href="styles.css">
 	<title>Team 127</title>
 </head>
 <body>
@@ -129,7 +127,6 @@
 		 }
 		</script> -->
 		
-	<div class="ScrollStyle">
 
 <!-- 	    <div class="result">
 		<h2></h2>
@@ -174,10 +171,14 @@
 		</div>
  -->
 
+	<div class="ScrollStyle">
+
  		<div class='title1'>
 			<script>
-				var num_apts = apt_addresses.length;
+				var num_apts = addresses.length;
+				var name = 'name';
  				console.log(num_apts);
+
 	            document.write(num_apts + ' apartments in total');
  			</script>
 
@@ -252,29 +253,53 @@
 	    var map;
 	    var strings = [];
 
-	    for(i=0; i<apt_addresses.length;i++){
+	    for(i=0; i<addresses.length;i++){
+
+		var slideIndex = 1;
+		showSlides(slideIndex);
+
+// Next/previous controls
+
+
 	      var string ='<div id="iw-container">' +
 	                    '<div class="iw-subTitle">Apartment Details</div>' +
+						'<div class="slideshow-container">'+
+						  		'<div class="mySlides fade">'+
+						    // '<img src=' + urls[1] + 'style="height:120">'+
+						   				'<img src="img/image1.jpeg" height=120">'+
+								'</div>'+
+								'<div class="mySlides fade">'+
+									    '<img src="img/image2.jpeg" height=120">'+
+								'</div>'+
+								'<div class="mySlides fade">'+
+									    '<img src="img/image3.jpeg" height=120">'+
+								'</div>'+
+
+									  '<a class="prev" onclick="plusSlides(-1)">&#10094;</a>'+
+									  '<a class="next" onclick="plusSlides(1)">&#10095;</a>'+
+						'</div>'+
+						'showSlides(2)' + 
 	                    '<div class="iw-content">' +
-	                      // '<div class="iw-subTitle">' + ratings[i] +'</div>' +
+	                      // '<div class="iw-subTitle">' + Yes +'</div>' +
 	                       // '<a href='+ myurls[i]+'><img src=' + urls[i] + '></a> + ' + '<br>'+
-	                      // '<a>href="https://www.computerhope.com/"><img src=' + urls[i] + ' height=120/><a>' + '<br>'+
-	                      '<a target="_blank" href="Page3.html">' + '<img border="0" alt="W3Schools" src=' + apt_images[i] +' height="120"></a>'  + '<br>'+
+
+
+
+	                      // '<img src=' + urls[i] + ' height="120">' + '<br>'+
 	                        // '<p>LLLL</p>' +
 	                      // '<div class="iw-subTitle">Details</div>' +
 	                      '<p> Score: ' + scores[i] + 
 	                      '<br>Ranking: ' + '/' + addresses.length +
-	                      '<br>Rent: $' + rents[i] +
+	                      '<br>Rent: $' + rents[i] +  '</p>'+
 	                        // '<br>Yelp link: ' + urls[i] + '</p>'+
 	                      // '<br><a target="_blank" href=' + myurls[i] + '>Click here to see more details</a>' + '</p>'+
 	                    '</div>' +
 	                    '<div class="iw-bottom-gradient"></div>' +
+						'<br>'+
 	                  '</div>';
 
 	      strings.push(string);
 	    }
-
-// <p><a href="https://www.computerhope.com/"><img src="https://www.computerhope.com/logo.gif"></a></p>
 	 
 	    function initMap() {
 	      map = new google.maps.Map(document.getElementById('map'), {
@@ -302,6 +327,41 @@
 
 	      var geocoder = new google.maps.Geocoder();
 	      var locations = getPoints(geocoder,map);
+
+
+
+
+
+      
+            var userLi1 = '<li>Some awesome content for the 1st list item</li>';
+
+            // add some content userLi2
+            var userLi2 = '<li>Some awesome content for the 2nd list item</li>'
+              // set marker content
+              marker.html = '<div style = "width:450px;height:150px;"><ul id="slider2">' + userLi1 + userLi2 + '</ul></div>';
+             // add listener 
+             google.maps.event.addListener(marker, 'click', function() {
+                    infowindow.setContent(marker.html);
+                  infowindow.open(map, marker);
+                });
+
+          }
+
+          initialize();      
+          // initiate slider here
+	        $('#mySlider').anythingSlider({
+	            mode                : 'f',   // fade mode - new in v1.8!
+	            resizeContents      : false, // If true, solitary images/objects in the panel will expand to fit the viewport
+	            expand              : true,
+	            navigationSize      : 3,     // Set this to the maximum number of visible navigation tabs; false to disable
+
+	            onSlideBegin: function(e,slider) {
+	                // keep the current navigation tab in view
+	                slider.navWindow( slider.targetPage );
+	            }
+	        });
+
+
 
 	      Promise.all(locations)     
 	      .then(function(returnVals){
@@ -376,6 +436,32 @@
 	        })
 	      })
 	    } 
+
+		function plusSlides(n) {
+		  showSlides(slideIndex += n);
+		}
+
+		// Thumbnail image controls
+		function currentSlide(n) {
+		  showSlides(slideIndex = n);
+		}
+
+		function showSlides(n) {
+		  var i;
+		  var slides = document.getElementsByClassName("mySlides");
+		  // var dots = document.getElementsByClassName("dot");
+		  if (n > slides.length) {slideIndex = 1} 
+		  if (n < 1) {slideIndex = slides.length}
+		  for (i = 0; i < slides.length; i++) {
+		      slides[i].style.display = "none"; 
+		  }
+		  // for (i = 0; i < dots.length; i++) {
+		  //     dots[i].className = dots[i].className.replace(" active", "");
+		  // }
+		  slides[slideIndex-1].style.display = "block"; 
+		  dots[slideIndex-1].className += " active";
+		}
+
 	  </script>
 </div>
 
