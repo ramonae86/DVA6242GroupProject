@@ -2,7 +2,8 @@
 
 import pymysql
 
-conn = pymysql.connect(host='localhost', user='root', password='ramon555')
+
+conn = pymysql.connect(host='localhost', user='root', password='1459')
 
 conn.cursor().execute('DROP DATABASE IF EXISTS cs6242')
 conn.cursor().execute('CREATE DATABASE cs6242')
@@ -61,38 +62,13 @@ conn.cursor().execute('''CREATE TABLE NYCrime (
                          )''')
 conn.commit()
 
-# all datas
-#Option Name,Contact,Address,Size,Rent,Monthly Fees,One Time Fees,Pet Policy,Distance,Duration,Parking,Gym,Kitchen,
-#Amenities,Features,Living Space,Lease Info,Services,Property Info,Indoor Info,Outdoor Info,Images,Description
 conn.cursor().execute('''CREATE TABLE Apt (
                            Name varchar(200) NOT NULL,
-                           Contact var(20),
                            Address varchar(150),
-                           Size varchar(20),
                            Rent varchar(20),
-                           Pet varchar(200),
-                           Gym varchar(200),
-                           Kitchen varchar(200),
-                           Amenities varchar(200),
-                           Features varchar(200),
-                           LivingSpace varchar(200),
-                           Lease varchar(100),
-                           Services varchar(200),
-                           PropertyInfo varchar(200),
-                           IndoorInfo varchar(200),
-                           OutdoorInfo varchar(200),
                            Images varchar(1000),
-                           Description varchar(100),
-                           PRIMARY KEY (Address)
+                           PRIMARY KEY (Name)
                          )''')
-
-# conn.cursor().execute('''CREATE TABLE Apt (
-#                            Name varchar(200) NOT NULL,
-#                            Address varchar(150),
-#                            Rent varchar(20),
-#                            Images varchar(1000),
-#                            PRIMARY KEY (Name)
-#                          )''')
 
 conn.commit()
 
