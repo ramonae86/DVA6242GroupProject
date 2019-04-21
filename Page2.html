@@ -15,7 +15,7 @@
 	 }
 	 console.log(getUrlVars());
 	</script>
-	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="stylesheet" type="text/css" href="styles1.css">
 	<title>Team 127</title>
     </head>
     <body>
@@ -139,65 +139,7 @@
 	    -->	</div>
 
 	<div id="result_list">
-	    <!-- 	    <div class="result">
-		 <script src="zillowapi.js"></script>
-		 <script>
-		 const Http = new XMLHttpRequest();
-		 const url='http://www.zillow.com/webservice/GetSearchResults.htm?zws-id=X1-ZWz17zzknk57gr_4hjdy&address=2114+Bigelow+Ave&citystatezip=Seattle%2C+WA';
-		 Http.open("GET", url);
-		 Http.setRequestHeader('Access-Control-Allow-Headers', '*');
-		 Http.setRequestHeader('Access-Control-Allow-Origin', '*');
-		 Http.send();
-		 Http.onreadystatechange=(e)=>{
-		 console.log(Http.responseText)
-		 }
-		 </script> -->
-	    
 	    <div class="ScrollStyle">
-
-		<!-- 	    <div class="result">
-		     <h2></h2>
-		     <p></p>
-		     <img src="img/apt1.jpg" alt="Lights" style="height:100px">
-		     <p></p>
-		     <img src="img/apt2.jpg" alt="Lights" style="height:100px">
-		     <p></p>
-		     <img src="img/apt1.jpg" alt="Lights" style="height:100px">
-		     <p></p>
-		     <img src="img/apt2.jpg" alt="Lights" style="height:100px">
-		     <p></p>
-		     <img src="img/apt1.jpg" alt="Lights" style="height:100px">
-		     <p></p>
-		     <img src="img/apt1.jpg" alt="Lights" style="height:100px">
-		     <p></p>
-		     <img src="img/apt2.jpg" alt="Lights" style="height:100px">
-		     <p></p>
-		     <img src="img/apt1.jpg" alt="Lights" style="height:100px">
-		     <p></p>
-		     <img src="img/apt2.jpg" alt="Lights" style="height:100px">
-		     <p></p>
-		     <img src="img/apt1.jpg" alt="Lights" style="height:100px">
-		     
-		     </div> -->
-		<!-- 
-		     <div class="panel">
-		     <img src='img/apt1.jpg' />
-        	     <p>A image of an Architecture</p>
-
-		     </div>
-
-		     <div class="panel">
-		     <img src='img/apt1.jpg' />
-        	     <p>A image of an Architecture</p>
-
-		     </div>
-
-		     <div class="panel">
-		     <img src='img/apt1.jpg' />
-        	     <p>A image of an Architecture</p>
-		     </div>
-		-->
-
  		<div class='title1'>
 		    <script>
 		     var num_apts = apt_addresses.length;
@@ -207,7 +149,7 @@
 
  		</div>
 		<script>
-		 for (i=0;i<=apt_addresses.length;i++)
+		 for (i=0;i<apt_addresses.length;i++)
 		 {
 		     document.write(i+1);
 		     var image;
@@ -216,72 +158,18 @@
 		     } else {
 			 image = apt_images[i];
 		     }
-		     var htmlcommands = "<div class='panel' onmouseover='markers["+i+"].setIcon(highlightedIcon());' onmouseout='markers["+i+"].setIcon(normalIcon());' ><img src='" + image + "'>" + "</div>";
+		     var htmlcommands = "<div class='panel' onmouseover='markers["+i+"].setIcon(highlightedIcon());' onmouseout='markers["+i+"].setIcon(normalIcon());' ><img src='" + image + "'>";
+		     htmlcommands += "<span><div class='panel_text1'>" + apt_names[i] + "</div><div class='panel_text2'>" + apt_addresses[i] + "</div></span>";
+		     htmlcommands += "</div>"
 		     document.write(htmlcommands);
 		 }
 		 
 		</script>
-		
-		<div class="panel" onmouseover="markers[0].setIcon(highlightedIcon());" onmouseout="markers[0].setIcon(normalIcon());" >
-		    <img src='https://images1.apartments.com/i2/c4fO2mz-tpJlsnZxFln1xnTa9lRswJE7VTwhsPGGf4c/111/270-w-25th-st-unit-4a-new-york-ny-primary-photo.jpg'>
-        	    <span>
-        		<script>
-        		 var rent = 2000;
-        		 var string =
-			     '<div class="panel_text1">'+' Rent: '+rent+'</div>' +
-			     '<div class="panel_text2">' +
-			     // '<div class="iw-subTitle">' + ratings[i] +'</div>' +
-			     // '<p>LLLL</p>' +
-			     // '<div class="iw-subTitle">Details</div>' +
-			     '<p> Score: ' + 0.1 + ' - Safty: ' + 0.2 + ' - Traffic: ' + 1  + ' - Education: ' + 1 +  ' - Environment: ' + 1 + '</p>'+
-			     // '<br>Yelp link: ' + urls[i] + '</p>'+
-			     '</div>'  ;
-	                 // '<div class="iw-bottom-gradient"></div>' +
-			 
-        		 document.write(string);
-        		</script>
-        	    </span>
-		</div>
 
-		<div class="panel" onmouseover="markers[1].setIcon(highlightedIcon());" onmouseout="markers[1].setIcon(normalIcon());" >
-		    <img src='https://images1.apartments.com/i2/c4fO2mz-tpJlsnZxFln1xnTa9lRswJE7VTwhsPGGf4c/111/270-w-25th-st-unit-4a-new-york-ny-primary-photo.jpg'/>
-        	    <span>
-        		<script>
-        		 var rent = 2000;
-        		 var string =
-			     '<div class="panel_text1">'+' Rent: '+rent+'</div>' +
-			     '<div class="panel_text2">' +
-			     // '<div class="iw-subTitle">' + ratings[i] +'</div>' +
-			     // '<p>LLLL</p>' +
-			     // '<div class="iw-subTitle">Details</div>' +
-			     '<p> Score: ' + 0.1 + ' - Safty: ' + 0.2 + ' - Traffic: ' + 1  + ' - Education: ' + 1 +  ' - Environment: ' + 1 + '</p>'+
-			     // '<br>Yelp link: ' + urls[i] + '</p>'+
-			     '</div>'  ;
-	                 // '<div class="iw-bottom-gradient"></div>' +
-			 
-        		 document.write(string);
-        		</script>
-        	    </span>
-		</div>
-
-		<!-- 		<div class="panel" class="foo">
-		     <img src='img/apt1.jpg' />
-        	     <span>A image of an Architecture</span>
-		     </div>
-		     <div class="panel" class="foo">
-		     <img src='img/apt1.jpg' />
-        	     <span>A image of an Architecture</span>
-		     </div>
-
-		     <div class="panel" class="foo">
-		     <img src='img/apt1.jpg' />
-        	     <span>A image of an Architecture</span>
-		     </div>
-		-->
-	    </div> <!-- end of row -->
+	    </div>
+	</div> <!-- end of row -->
 
 	    
-	</div>
 	
 	<div id="map">
 	    <script>
@@ -313,8 +201,8 @@
 	     
 	     function initMap() {
 		 map = new google.maps.Map(document.getElementById('map'), {
-	             center: {lat: 40.723040, lng: -73.899180},
-	             zoom: 10
+	             center: {lat: 40.734345, lng: -73.988748, },
+	             zoom: 14
 		 });
 
 
