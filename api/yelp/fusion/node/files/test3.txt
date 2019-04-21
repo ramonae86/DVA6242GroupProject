@@ -1,0 +1,809 @@
+[
+    {
+        "id": "vSkCDRWX6VvP4PJHHFgoDw",
+        "alias": "new-king-wok-restaurant-new-york",
+        "name": "New King Wok Restaurant",
+        "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/EniOjVoUX3ReWRW_6gmuog/o.jpg",
+        "is_closed": false,
+        "url": "https://www.yelp.com/biz/new-king-wok-restaurant-new-york?adjust_creative=l9agJO_xn0aq7qyWKA_uOA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=l9agJO_xn0aq7qyWKA_uOA",
+        "review_count": 11,
+        "categories": [
+            {
+                "alias": "chinese",
+                "title": "Chinese"
+            }
+        ],
+        "rating": 3.5,
+        "coordinates": {
+            "latitude": 40.8064728,
+            "longitude": -73.9498444
+        },
+        "transactions": [],
+        "price": "$",
+        "location": {
+            "address1": "2025 7th Ave",
+            "address2": "",
+            "address3": "",
+            "city": "New York",
+            "zip_code": "10027",
+            "country": "US",
+            "state": "NY",
+            "display_address": [
+                "2025 7th Ave",
+                "New York, NY 10027"
+            ]
+        },
+        "phone": "+12122222868",
+        "display_phone": "(212) 222-2868",
+        "distance": 118.42764200344918
+    },
+    {
+        "id": "cGSLzPA_SCWrN3cyT86Nhw",
+        "alias": "dun-huang-upper-west-new-york-6",
+        "name": "Dun Huang - Upper West",
+        "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/j2TThhEAG08RgOeNkDiX-g/o.jpg",
+        "is_closed": false,
+        "url": "https://www.yelp.com/biz/dun-huang-upper-west-new-york-6?adjust_creative=l9agJO_xn0aq7qyWKA_uOA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=l9agJO_xn0aq7qyWKA_uOA",
+        "review_count": 52,
+        "categories": [
+            {
+                "alias": "chinese",
+                "title": "Chinese"
+            },
+            {
+                "alias": "noodles",
+                "title": "Noodles"
+            }
+        ],
+        "rating": 3.5,
+        "coordinates": {
+            "latitude": 40.81106,
+            "longitude": -73.95818
+        },
+        "transactions": [
+            "pickup",
+            "delivery"
+        ],
+        "price": "$$",
+        "location": {
+            "address1": "1268 Amsterdam Ave",
+            "address2": null,
+            "address3": "",
+            "city": "New York",
+            "zip_code": "10027",
+            "country": "US",
+            "state": "NY",
+            "display_address": [
+                "1268 Amsterdam Ave",
+                "New York, NY 10027"
+            ]
+        },
+        "phone": "+16464764549",
+        "display_phone": "(646) 476-4549",
+        "distance": 834.8711984240787
+    },
+    {
+        "id": "Wezt_3dALzHmfXjHOPG4GQ",
+        "alias": "empire-new-york-3",
+        "name": "Empire",
+        "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/xMmxhzMNesORA6P7qnz0RQ/o.jpg",
+        "is_closed": false,
+        "url": "https://www.yelp.com/biz/empire-new-york-3?adjust_creative=l9agJO_xn0aq7qyWKA_uOA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=l9agJO_xn0aq7qyWKA_uOA",
+        "review_count": 22,
+        "categories": [
+            {
+                "alias": "chinese",
+                "title": "Chinese"
+            },
+            {
+                "alias": "importedfood",
+                "title": "Imported Food"
+            }
+        ],
+        "rating": 3.5,
+        "coordinates": {
+            "latitude": 40.8028688256819,
+            "longitude": -73.9530954451981
+        },
+        "transactions": [
+            "pickup",
+            "delivery"
+        ],
+        "price": "$",
+        "location": {
+            "address1": "1902 Adam Clayton Powell Jr Blvd",
+            "address2": "",
+            "address3": "",
+            "city": "New York",
+            "zip_code": "10039",
+            "country": "US",
+            "state": "NY",
+            "display_address": [
+                "1902 Adam Clayton Powell Jr Blvd",
+                "New York, NY 10039"
+            ]
+        },
+        "phone": "+12122808880",
+        "display_phone": "(212) 280-8880",
+        "distance": 390.05581316255115
+    },
+    {
+        "id": "b2d8CP6sKQotFjzZX0Thtw",
+        "alias": "szechuan-garden-kitchen-new-york",
+        "name": "Szechuan Garden Kitchen",
+        "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/LBhoSzABK6joyTvz627Dzg/o.jpg",
+        "is_closed": false,
+        "url": "https://www.yelp.com/biz/szechuan-garden-kitchen-new-york?adjust_creative=l9agJO_xn0aq7qyWKA_uOA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=l9agJO_xn0aq7qyWKA_uOA",
+        "review_count": 16,
+        "categories": [
+            {
+                "alias": "chinese",
+                "title": "Chinese"
+            }
+        ],
+        "rating": 4,
+        "coordinates": {
+            "latitude": 40.802006,
+            "longitude": -73.956726
+        },
+        "transactions": [],
+        "price": "$",
+        "location": {
+            "address1": "2076 8th Ave",
+            "address2": "",
+            "address3": "",
+            "city": "New York",
+            "zip_code": "10026",
+            "country": "US",
+            "state": "NY",
+            "display_address": [
+                "2076 8th Ave",
+                "New York, NY 10026"
+            ]
+        },
+        "phone": "+12126666868",
+        "display_phone": "(212) 666-6868",
+        "distance": 658.4502297144128
+    },
+    {
+        "id": "O2jCWIOWb-IhyZGZLTNNoA",
+        "alias": "peking-kitchen-ii-new-york",
+        "name": "Peking Kitchen II",
+        "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/cTSwv6IqakTGkvGwBhtnMQ/o.jpg",
+        "is_closed": false,
+        "url": "https://www.yelp.com/biz/peking-kitchen-ii-new-york?adjust_creative=l9agJO_xn0aq7qyWKA_uOA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=l9agJO_xn0aq7qyWKA_uOA",
+        "review_count": 19,
+        "categories": [
+            {
+                "alias": "chinese",
+                "title": "Chinese"
+            }
+        ],
+        "rating": 3.5,
+        "coordinates": {
+            "latitude": 40.80479,
+            "longitude": -73.954735
+        },
+        "transactions": [],
+        "price": "$",
+        "location": {
+            "address1": "2162 8th Ave",
+            "address2": "",
+            "address3": "",
+            "city": "New York",
+            "zip_code": "10026",
+            "country": "US",
+            "state": "NY",
+            "display_address": [
+                "2162 8th Ave",
+                "New York, NY 10026"
+            ]
+        },
+        "phone": "+12122227888",
+        "display_phone": "(212) 222-7888",
+        "distance": 339.6399471451334
+    },
+    {
+        "id": "_WXa2M3gz2Mi0ys3s88nDw",
+        "alias": "la-salle-dumpling-room-new-york",
+        "name": "La Salle Dumpling Room",
+        "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/pPo8XammSW6Vlj4iJBcAVA/o.jpg",
+        "is_closed": false,
+        "url": "https://www.yelp.com/biz/la-salle-dumpling-room-new-york?adjust_creative=l9agJO_xn0aq7qyWKA_uOA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=l9agJO_xn0aq7qyWKA_uOA",
+        "review_count": 207,
+        "categories": [
+            {
+                "alias": "asianfusion",
+                "title": "Asian Fusion"
+            },
+            {
+                "alias": "chinese",
+                "title": "Chinese"
+            }
+        ],
+        "rating": 4,
+        "coordinates": {
+            "latitude": 40.81403,
+            "longitude": -73.95983
+        },
+        "transactions": [
+            "pickup",
+            "delivery"
+        ],
+        "price": "$$",
+        "location": {
+            "address1": "3141 Broadway",
+            "address2": null,
+            "address3": "",
+            "city": "New York",
+            "zip_code": "10027",
+            "country": "US",
+            "state": "NY",
+            "display_address": [
+                "3141 Broadway",
+                "New York, NY 10027"
+            ]
+        },
+        "phone": "+12129610300",
+        "display_phone": "(212) 961-0300",
+        "distance": 1162.433601312576
+    },
+    {
+        "id": "Y7rizwe37H8O1RfKiXrf0Q",
+        "alias": "super-red-star-kitchen-new-york",
+        "name": "Super Red Star Kitchen",
+        "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/6p8uXtUqevqOSjY4jgbfiA/o.jpg",
+        "is_closed": false,
+        "url": "https://www.yelp.com/biz/super-red-star-kitchen-new-york?adjust_creative=l9agJO_xn0aq7qyWKA_uOA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=l9agJO_xn0aq7qyWKA_uOA",
+        "review_count": 22,
+        "categories": [
+            {
+                "alias": "chinese",
+                "title": "Chinese"
+            }
+        ],
+        "rating": 2.5,
+        "coordinates": {
+            "latitude": 40.80765,
+            "longitude": -73.94963
+        },
+        "transactions": [
+            "pickup",
+            "delivery"
+        ],
+        "price": "$",
+        "location": {
+            "address1": "2060 Adam Clayton Powell",
+            "address2": "",
+            "address3": "",
+            "city": "New York",
+            "zip_code": "10027",
+            "country": "US",
+            "state": "NY",
+            "display_address": [
+                "2060 Adam Clayton Powell",
+                "New York, NY 10027"
+            ]
+        },
+        "phone": "+12128663988",
+        "display_phone": "(212) 866-3988",
+        "distance": 217.48392882466516
+    },
+    {
+        "id": "siWkEWRj6ipcMMY5EGWPrQ",
+        "alias": "number-1-chinese-restaurant-new-york",
+        "name": "Number 1 Chinese Restaurant",
+        "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/qvppp5Q2LFnqxt1URWfF2w/o.jpg",
+        "is_closed": false,
+        "url": "https://www.yelp.com/biz/number-1-chinese-restaurant-new-york?adjust_creative=l9agJO_xn0aq7qyWKA_uOA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=l9agJO_xn0aq7qyWKA_uOA",
+        "review_count": 6,
+        "categories": [
+            {
+                "alias": "chinese",
+                "title": "Chinese"
+            }
+        ],
+        "rating": 3.5,
+        "coordinates": {
+            "latitude": 40.80127,
+            "longitude": -73.94974
+        },
+        "transactions": [],
+        "price": "$",
+        "location": {
+            "address1": "83 W 115th St",
+            "address2": "",
+            "address3": "",
+            "city": "New York",
+            "zip_code": "10026",
+            "country": "US",
+            "state": "NY",
+            "display_address": [
+                "83 W 115th St",
+                "New York, NY 10026"
+            ]
+        },
+        "phone": "+12127223958",
+        "display_phone": "(212) 722-3958",
+        "distance": 536.0599196549467
+    },
+    {
+        "id": "2VQDEQuK3xLFNktPBIpmuQ",
+        "alias": "new-aroma-chinese-restaurant-new-york",
+        "name": "New Aroma Chinese Restaurant",
+        "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/T3I4xG3gdA1TyJSJt2P_vg/o.jpg",
+        "is_closed": false,
+        "url": "https://www.yelp.com/biz/new-aroma-chinese-restaurant-new-york?adjust_creative=l9agJO_xn0aq7qyWKA_uOA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=l9agJO_xn0aq7qyWKA_uOA",
+        "review_count": 29,
+        "categories": [
+            {
+                "alias": "chinese",
+                "title": "Chinese"
+            }
+        ],
+        "rating": 3.5,
+        "coordinates": {
+            "latitude": 40.8132171630859,
+            "longitude": -73.9557037353516
+        },
+        "transactions": [],
+        "price": "$",
+        "location": {
+            "address1": "465 W 125th St",
+            "address2": "",
+            "address3": "",
+            "city": "New York",
+            "zip_code": "10027",
+            "country": "US",
+            "state": "NY",
+            "display_address": [
+                "465 W 125th St",
+                "New York, NY 10027"
+            ]
+        },
+        "phone": "+12129328706",
+        "display_phone": "(212) 932-8706",
+        "distance": 894.0186273055507
+    },
+    {
+        "id": "xZ19F2iiWiA36LAS5PH_GA",
+        "alias": "great-wall-kitchen-new-york",
+        "name": "Great Wall Kitchen",
+        "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/B4XX8INdwJoJlopU0ivFEg/o.jpg",
+        "is_closed": false,
+        "url": "https://www.yelp.com/biz/great-wall-kitchen-new-york?adjust_creative=l9agJO_xn0aq7qyWKA_uOA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=l9agJO_xn0aq7qyWKA_uOA",
+        "review_count": 6,
+        "categories": [
+            {
+                "alias": "chinese",
+                "title": "Chinese"
+            }
+        ],
+        "rating": 3.5,
+        "coordinates": {
+            "latitude": 40.8132892,
+            "longitude": -73.9454751
+        },
+        "transactions": [],
+        "price": "$",
+        "location": {
+            "address1": "2238 Adam Clayton Powell",
+            "address2": "",
+            "address3": "",
+            "city": "New York",
+            "zip_code": "10027",
+            "country": "US",
+            "state": "NY",
+            "display_address": [
+                "2238 Adam Clayton Powell",
+                "New York, NY 10027"
+            ]
+        },
+        "phone": "+12122348086",
+        "display_phone": "(212) 234-8086",
+        "distance": 941.8149430013597
+    },
+    {
+        "id": "ygXivebDgnAW3l7z9jQ6KQ",
+        "alias": "hong-cheong-kitchen-new-york",
+        "name": "Hong Cheong Kitchen",
+        "image_url": "",
+        "is_closed": false,
+        "url": "https://www.yelp.com/biz/hong-cheong-kitchen-new-york?adjust_creative=l9agJO_xn0aq7qyWKA_uOA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=l9agJO_xn0aq7qyWKA_uOA",
+        "review_count": 1,
+        "categories": [
+            {
+                "alias": "chinese",
+                "title": "Chinese"
+            }
+        ],
+        "rating": 5,
+        "coordinates": {
+            "latitude": 40.812366,
+            "longitude": -73.949928
+        },
+        "transactions": [],
+        "location": {
+            "address1": "2393 Frederick Douglass B",
+            "address2": "",
+            "address3": "",
+            "city": "New York",
+            "zip_code": "10027",
+            "country": "US",
+            "state": "NY",
+            "display_address": [
+                "2393 Frederick Douglass B",
+                "New York, NY 10027"
+            ]
+        },
+        "phone": "+12123166688",
+        "display_phone": "(212) 316-6688",
+        "distance": 712.5640674099417
+    },
+    {
+        "id": "51DwJDP5TOlsCQYc0GQdVQ",
+        "alias": "west-place-new-york",
+        "name": "West Place",
+        "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/XlLa-hs3-VkRovbdDjLovg/o.jpg",
+        "is_closed": false,
+        "url": "https://www.yelp.com/biz/west-place-new-york?adjust_creative=l9agJO_xn0aq7qyWKA_uOA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=l9agJO_xn0aq7qyWKA_uOA",
+        "review_count": 53,
+        "categories": [
+            {
+                "alias": "chinese",
+                "title": "Chinese"
+            }
+        ],
+        "rating": 3,
+        "coordinates": {
+            "latitude": 40.8116735,
+            "longitude": -73.957693
+        },
+        "transactions": [
+            "pickup",
+            "delivery"
+        ],
+        "price": "$",
+        "location": {
+            "address1": "1288 Amsterdam Ave",
+            "address2": "",
+            "address3": "",
+            "city": "New York",
+            "zip_code": "10027",
+            "country": "US",
+            "state": "NY",
+            "display_address": [
+                "1288 Amsterdam Ave",
+                "New York, NY 10027"
+            ]
+        },
+        "phone": "+12129329390",
+        "display_phone": "(212) 932-9390",
+        "distance": 840.5024167316298
+    },
+    {
+        "id": "3uJAt1EHG0x9pz_c91AHuQ",
+        "alias": "peking-garden-new-york-2",
+        "name": "Peking Garden",
+        "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/kuWx6tCwnlaWChfRe0c2MA/o.jpg",
+        "is_closed": false,
+        "url": "https://www.yelp.com/biz/peking-garden-new-york-2?adjust_creative=l9agJO_xn0aq7qyWKA_uOA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=l9agJO_xn0aq7qyWKA_uOA",
+        "review_count": 28,
+        "categories": [
+            {
+                "alias": "chinese",
+                "title": "Chinese"
+            }
+        ],
+        "rating": 3.5,
+        "coordinates": {
+            "latitude": 40.8149986,
+            "longitude": -73.9592896
+        },
+        "transactions": [
+            "pickup",
+            "delivery"
+        ],
+        "price": "$",
+        "location": {
+            "address1": "3163 Broadway",
+            "address2": "",
+            "address3": "",
+            "city": "New York",
+            "zip_code": "10027",
+            "country": "US",
+            "state": "NY",
+            "display_address": [
+                "3163 Broadway",
+                "New York, NY 10027"
+            ]
+        },
+        "phone": "+12128653600",
+        "display_phone": "(212) 865-3600",
+        "distance": 1208.0187123267651
+    },
+    {
+        "id": "mL43TXtc0WlFCfhlN0ziHQ",
+        "alias": "shun-cheong-chinese-kitchen-new-york",
+        "name": "Shun Cheong Chinese Kitchen",
+        "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/M9Bi-qOawA-UnOgabRoAFA/o.jpg",
+        "is_closed": false,
+        "url": "https://www.yelp.com/biz/shun-cheong-chinese-kitchen-new-york?adjust_creative=l9agJO_xn0aq7qyWKA_uOA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=l9agJO_xn0aq7qyWKA_uOA",
+        "review_count": 3,
+        "categories": [
+            {
+                "alias": "chinese",
+                "title": "Chinese"
+            }
+        ],
+        "rating": 2.5,
+        "coordinates": {
+            "latitude": 40.79753,
+            "longitude": -73.94915
+        },
+        "transactions": [],
+        "price": "$",
+        "location": {
+            "address1": "2 W 111th St",
+            "address2": "",
+            "address3": "",
+            "city": "New York",
+            "zip_code": "10026",
+            "country": "US",
+            "state": "NY",
+            "display_address": [
+                "2 W 111th St",
+                "New York, NY 10026"
+            ]
+        },
+        "phone": "+12123488889",
+        "display_phone": "(212) 348-8889",
+        "distance": 953.9861748890237
+    },
+    {
+        "id": "4jRVqVqkCNFwV8xxh2Jo3Q",
+        "alias": "empire-corner-ii-new-york",
+        "name": "Empire Corner II",
+        "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/pUK2iYihLeNZDEENp0C6OA/o.jpg",
+        "is_closed": false,
+        "url": "https://www.yelp.com/biz/empire-corner-ii-new-york?adjust_creative=l9agJO_xn0aq7qyWKA_uOA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=l9agJO_xn0aq7qyWKA_uOA",
+        "review_count": 18,
+        "categories": [
+            {
+                "alias": "chinese",
+                "title": "Chinese"
+            }
+        ],
+        "rating": 2.5,
+        "coordinates": {
+            "latitude": 40.800489,
+            "longitude": -73.9463817825413
+        },
+        "transactions": [],
+        "price": "$",
+        "location": {
+            "address1": "1415 5th Ave",
+            "address2": "",
+            "address3": "",
+            "city": "New York",
+            "zip_code": "10029",
+            "country": "US",
+            "state": "NY",
+            "display_address": [
+                "1415 5th Ave",
+                "New York, NY 10029"
+            ]
+        },
+        "phone": "+12124105756",
+        "display_phone": "(212) 410-5756",
+        "distance": 728.2499297681724
+    },
+    {
+        "id": "HKjazh_40Gei5rP5ir-F2w",
+        "alias": "zhengs-river-restaurant-new-york",
+        "name": "Zheng's River Restaurant",
+        "image_url": "",
+        "is_closed": false,
+        "url": "https://www.yelp.com/biz/zhengs-river-restaurant-new-york?adjust_creative=l9agJO_xn0aq7qyWKA_uOA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=l9agJO_xn0aq7qyWKA_uOA",
+        "review_count": 1,
+        "categories": [
+            {
+                "alias": "chinese",
+                "title": "Chinese"
+            }
+        ],
+        "rating": 4,
+        "coordinates": {
+            "latitude": 40.802,
+            "longitude": -73.95672
+        },
+        "transactions": [],
+        "price": "$$$$",
+        "location": {
+            "address1": "2076 Frederick Douglass B",
+            "address2": "",
+            "address3": "",
+            "city": "New York",
+            "zip_code": "10026",
+            "country": "US",
+            "state": "NY",
+            "display_address": [
+                "2076 Frederick Douglass B",
+                "New York, NY 10026"
+            ]
+        },
+        "phone": "+12126666868",
+        "display_phone": "(212) 666-6868",
+        "distance": 653.8034755190329
+    },
+    {
+        "id": "CvSOAN2WWzLRGND4vN1xtA",
+        "alias": "a1-asian-fusion-new-york-7",
+        "name": "A1 Asian Fusion",
+        "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/Us7HSWXorw4tfzlGwA_MYA/o.jpg",
+        "is_closed": false,
+        "url": "https://www.yelp.com/biz/a1-asian-fusion-new-york-7?adjust_creative=l9agJO_xn0aq7qyWKA_uOA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=l9agJO_xn0aq7qyWKA_uOA",
+        "review_count": 106,
+        "categories": [
+            {
+                "alias": "asianfusion",
+                "title": "Asian Fusion"
+            },
+            {
+                "alias": "japanese",
+                "title": "Japanese"
+            },
+            {
+                "alias": "thai",
+                "title": "Thai"
+            }
+        ],
+        "rating": 3.5,
+        "coordinates": {
+            "latitude": 40.80785,
+            "longitude": -73.94867
+        },
+        "transactions": [
+            "pickup",
+            "delivery"
+        ],
+        "price": "$$",
+        "location": {
+            "address1": "2071 7th Ave",
+            "address2": "",
+            "address3": "",
+            "city": "New York",
+            "zip_code": "10027",
+            "country": "US",
+            "state": "NY",
+            "display_address": [
+                "2071 7th Ave",
+                "New York, NY 10027"
+            ]
+        },
+        "phone": "+12128663888",
+        "display_phone": "(212) 866-3888",
+        "distance": 285.3540635217082
+    },
+    {
+        "id": "1vhKvwPkhwuiZYFp8q5JCg",
+        "alias": "tang-s-new-york",
+        "name": "Tang S",
+        "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/lhsGt2MkR4nFaJC8_Nhksw/o.jpg",
+        "is_closed": false,
+        "url": "https://www.yelp.com/biz/tang-s-new-york?adjust_creative=l9agJO_xn0aq7qyWKA_uOA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=l9agJO_xn0aq7qyWKA_uOA",
+        "review_count": 15,
+        "categories": [
+            {
+                "alias": "chinese",
+                "title": "Chinese"
+            }
+        ],
+        "rating": 2,
+        "coordinates": {
+            "latitude": 40.8110183,
+            "longitude": -73.9523964
+        },
+        "transactions": [],
+        "price": "$",
+        "location": {
+            "address1": "306 St Nicholas Ave",
+            "address2": "",
+            "address3": "",
+            "city": "New York",
+            "zip_code": "10027",
+            "country": "US",
+            "state": "NY",
+            "display_address": [
+                "306 St Nicholas Ave",
+                "New York, NY 10027"
+            ]
+        },
+        "phone": "+12128645179",
+        "display_phone": "(212) 864-5179",
+        "distance": 568.4907983509961
+    },
+    {
+        "id": "R1eZIyH8dOECfqUGGcANdQ",
+        "alias": "red-star-restaurant-new-york",
+        "name": "Red Star Restaurant",
+        "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/RVt0XvFcvZgFd_zPemYnzg/o.jpg",
+        "is_closed": false,
+        "url": "https://www.yelp.com/biz/red-star-restaurant-new-york?adjust_creative=l9agJO_xn0aq7qyWKA_uOA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=l9agJO_xn0aq7qyWKA_uOA",
+        "review_count": 17,
+        "categories": [
+            {
+                "alias": "chinese",
+                "title": "Chinese"
+            }
+        ],
+        "rating": 3,
+        "coordinates": {
+            "latitude": 40.7987632751465,
+            "longitude": -73.9426727294922
+        },
+        "transactions": [],
+        "price": "$",
+        "location": {
+            "address1": "112 E 116th St",
+            "address2": "",
+            "address3": "",
+            "city": "New York",
+            "zip_code": "10029",
+            "country": "US",
+            "state": "NY",
+            "display_address": [
+                "112 E 116th St",
+                "New York, NY 10029"
+            ]
+        },
+        "phone": "+12128608883",
+        "display_phone": "(212) 860-8883",
+        "distance": 1064.1760974539657
+    },
+    {
+        "id": "wtmPjQuCKeFuMdcR5SKEAQ",
+        "alias": "ocean-restaurant-new-york-21",
+        "name": "Ocean Restaurant",
+        "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/1SuvhfmTN2rsPUm7yrVSZA/o.jpg",
+        "is_closed": false,
+        "url": "https://www.yelp.com/biz/ocean-restaurant-new-york-21?adjust_creative=l9agJO_xn0aq7qyWKA_uOA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=l9agJO_xn0aq7qyWKA_uOA",
+        "review_count": 18,
+        "categories": [
+            {
+                "alias": "chinese",
+                "title": "Chinese"
+            },
+            {
+                "alias": "japanese",
+                "title": "Japanese"
+            }
+        ],
+        "rating": 2.5,
+        "coordinates": {
+            "latitude": 40.81086,
+            "longitude": -73.94356
+        },
+        "transactions": [
+            "pickup",
+            "delivery"
+        ],
+        "price": "$$",
+        "location": {
+            "address1": "393 Malcolm X Blvd",
+            "address2": null,
+            "address3": null,
+            "city": "New York",
+            "zip_code": "10027",
+            "country": "US",
+            "state": "NY",
+            "display_address": [
+                "393 Malcolm X Blvd",
+                "New York, NY 10027"
+            ]
+        },
+        "phone": "+12122899293",
+        "display_phone": "(212) 289-9293",
+        "distance": 828.6732338545612
+    }
+]

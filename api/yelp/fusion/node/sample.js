@@ -1,16 +1,11 @@
 'use strict';
-
 const yelp = require('yelp-fusion');
-
 // Place holder for Yelp Fusion's API Key. Grab them
 // from https://www.yelp.com/developers/v3/manage_app
 const apiKey = '6da7_Adx5Ru5fdHfXHUvkKXOoOQtQuJKA8nNURL-n6ZH1yUsMaDH4q5o6AgbEzJ9RH9-Bh1OHl-uJEmtiJ865l1mzeQM_mjFBNVAJ-_zcTx-y-nwCXeIrHzpZZKaXHYx';
 
 const searchRequest = {
-  term:'Chinese',
-  //location: '336 State St # 2, Brooklyn, NY 11217',
-  //location: '535 W 23rd St # 27084, New York, NY 10011',
-  location: '201 W 120th St APT 6D, New York, NY 10027',
+  location: '05405',
   radius: 1000
 };
 
