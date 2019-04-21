@@ -8,5 +8,6 @@ function search() {
     client.post(url, params, function(response) {
         console.log("response : " + response);
         const responseObj = JSON.parse(response)
+        window.location.href = 'Page2.html';
     })
 }

@@ -20,7 +20,7 @@ class Server(BaseHTTPRequestHandler):
         response_content = ""
         filepath = None
 
-        if self.path == "/" or self.path.endswith(".html"):
+        if self.path == "/" or self.path.find(".html"):
             route_content = "index.html" if self.path == "/" else self.path.strip("/")
             filepath = Path(route_content)
             content_type = "text/html"
@@ -45,8 +45,9 @@ class Server(BaseHTTPRequestHandler):
                 else:
                     response_content = filepath.open('rb').read()
             else:
+                print("unknown_type")
                 content_type = "text/plain"
-                response_content = "404 Not Found"
+                response_content = bytes(response_content, "UTF-8")
 
         self.send_response(200)
         self.send_header('Content-type', content_type)
@@ -54,7 +55,7 @@ class Server(BaseHTTPRequestHandler):
         return response_content
 
     def respond(self):
-        conn = pymysql.connect(host='localhost', user='root', password='ramon555', database='cs6242')
+        conn = pymysql.connect(host='localhost', user='root', password='1459', database='cs6242')
         print("REST path : " + self.path)
         if self.path == '/favicon.ico':
             return
@@ -67,7 +68,7 @@ class Server(BaseHTTPRequestHandler):
     def handle_post_request(self):
         content_length = int(self.headers['Content-Length'])
         request = self.rfile.read(content_length).decode()
-        conn = pymysql.connect(host='localhost', user='root', password='ramon555', database='cs6242')
+        conn = pymysql.connect(host='localhost', user='root', password='1459', database='cs6242')
         if self.path == "/search":
             searchrequesthandler.handle_search_request(self, request, conn)
 
