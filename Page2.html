@@ -6,6 +6,7 @@
 	<script src="data.js"></script>
 	<script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
 	<script>
+	 
 	 function getUrlVars() {
 	     var vars = {};
 	     var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
@@ -13,12 +14,52 @@
 	     });
 	     return vars;
 	 }
+	 function shuffleArray(array) {
+	     for (var i = array.length - 1; i > 0; i--) {
+		 var j = Math.floor(Math.random() * (i + 1));
+		 var temp = array[i];
+		 array[i] = array[j];
+		 array[j] = temp;
+	     }
+	 }
+	 function shuffle(a) {
+	     var j, x, i;
+	     for (i = a.length - 1; i > 0; i--) {
+		 j = Math.floor(Math.random() * (i + 1));
+		 x = a[i];
+		 a[i] = a[j];
+		 a[j] = x;
+	     }
+	     return a;
+	 }
 	 var page2_data = {
 	     names: apt_names,
 	     addresses: apt_addresses,
 	     schools: school_infos,
-	 };
-	 console.log(apt_names);
+	     rent: apt_rent,
+	     size: apt_size,
+	     contact: apt_contact,
+	     pet: apt_pet,
+	     description: apt_description,
+	     gym: apt_gym,
+	     kitchen: apt_kitchen,
+	     amenities: apt_amenities,
+	     feature: apt_feature,
+	     lease: apt_lease,
+	     services: apt_services,
+	     property: apt_property,
+	     indoor: apt_indoor,
+	     outdoor: apt_outdoor,
+	     images: apt_images,
+	     scores: score
+	 }
+	 console.log(page2_data);
+	 for(var attribute in page2_data) {
+	     //console.log(page2_data[attribute]);
+	     //shuffleArray(attribute[attribute]);
+	     page2_data[attribute]=shuffle(page2_data[attribute]);
+	 }
+	 console.log(page2_data);
 	</script>
 	<link rel="stylesheet" type="text/css" href="styles1.css">
 	<title>Team 127</title>
@@ -311,14 +352,6 @@
 		     safetybtn.checked = true;
 	     }
 	     
-	     
-	     
-	     console.log(traffic_weight);
-	     console.log(education_weight);
-	     console.log(environment_weight);
-	     console.log(safety_weight);
-	     
-	     
 	     function update(){
 		 var args_holder = [];
 		 $("input[type='radio']:checked").each(function() {
@@ -329,9 +362,8 @@
 		 var new_education_weight = args_holder[1];
 		 var new_environment_weight = args_holder[2];
 		 var new_safety_weight = args_holder[3];
-		 console.log("update");
 		 window.location.href = "Page2.html?traffic="+new_traffic_weight+"&education="+new_education_weight+"&environment="+new_environment_weight+"&safety="+new_safety_weight;
-		 apt_names=["new name"];
+		 
 	     }
 	    </script>
 	    </div>
@@ -340,24 +372,24 @@
 	    <div class="ScrollStyle">
  		<div class='title1'>
 		    <script>
-		     var num_apts = apt_addresses.length;
+		     var num_apts = page2_data.addresses.length;
 		     var name = 'name';
 	             document.write(num_apts + ' apartments in total');
  		    </script>
 
  		</div>
 		<script>
-		 for (i=0;i<apt_addresses.length;i++)
+		 for (i=0;i<page2_data.addresses.length;i++)
 		 {
 		     document.write(i+1);
 		     var image;
-		     if(apt_images[i][0]==""){
+		     if(page2_data.images[i][0]==""){
 			 image = "img/no_image_icon.png";
 		     } else {
-			 image = apt_images[i][0];
+			 image = page2_data.images[i][0];
 		     }
 		     var htmlcommands = "<a href='Page3.html?id="+i+"'><div class='panel' onmouseover='markers["+i+"].setIcon(highlightedIcon());' onmouseout='markers["+i+"].setIcon(normalIcon());' ><img src='" + image + "'>";
-		     htmlcommands += "<span><div class='panel_text1'>" + apt_names[i] + "</div><div class='panel_text2'>" + apt_addresses[i] + "</div></span>";
+		     htmlcommands += "<span><div class='panel_text1'>" + page2_data.names[i] + "</div><div class='panel_text2'>" + page2_data.addresses[i] + "</div></span>";
 		     htmlcommands += "</a></div>"
 		     document.write(htmlcommands);
 		 }
@@ -376,17 +408,17 @@
 	     var map;
 	     var strings = [];
 
-	     for(i=0; i<apt_addresses.length;i++){
+	     for(i=0; i<page2_data.addresses.length;i++){
 		 var string ='<div id="iw-container">' +
 	                     '<div class="iw-subTitle">Apartment Details</div>' +
 	                     '<div class="iw-content">' +
 	                     // '<div class="iw-subTitle">' + ratings[i] +'</div>' +
 	                     // '<a href='+ myurls[i]+'><img src=' + urls[i] + '></a> + ' + '<br>'+
-	                     '<img src=' + apt_images[i] + ' height="120">' + '<br>'+
+	                     '<img src=' + page2_data.images[i][0] + ' height="120">' + '<br>'+
 	                     // '<p>LLLL</p>' +
 	                     // '<div class="iw-subTitle">Details</div>' +
 	                     '<p> Score: ' + 
-	                     '<br>Ranking: ' + '/' + apt_addresses.length +
+	                     '<br>Ranking: ' + '/' + page2_data.addresses.length +
 	                     '<br>Rent: $' +
 	                     // '<br>Yelp link: ' + urls[i] + '</p>'+
 	                     // '<br><a target="_blank" href=' + myurls[i] + '>Click here to see more details</a>' + '</p>'+
@@ -477,8 +509,8 @@
 	     function getPoints(geocoder,map) {
 		 let locationData = [];
 		 let latValue;
-		 for(let i = 0; i < apt_addresses.length; i++){
-	             locationData.push(findLatLang(apt_addresses[i], geocoder, map));
+		 for(let i = 0; i < page2_data.addresses.length; i++){
+	             locationData.push(findLatLang(page2_data.addresses[i], geocoder, map));
 	             //console.log(locationData);
 		 }
 		 return locationData // array of promises
