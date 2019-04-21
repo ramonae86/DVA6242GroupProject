@@ -3,9 +3,7 @@ import pymysql
 import warnings
 
 
-
-conn = pymysql.connect(host='localhost', user='root', password='ramon555')
-
+conn = pymysql.connect(host='localhost', user='root', password='Fqjl0308')
 conn.cursor().execute('USE cs6242')
 conn.cursor().execute('SET innodb_lock_wait_timeout = 10000')
 
@@ -187,22 +185,39 @@ with open("cleancrime.csv", encoding="utf8", errors='ignore') as f:
 
     conn.commit()
 
-    ###process cleanapt.csv
-with open("cleanapt.csv", encoding="utf8", errors='ignore') as f:
+    ###process cleanapt_new.csv
+with open("cleanapt_new.csv", encoding="utf8", errors='ignore') as f:
     reader = csv.reader(f)
     next(reader) # skip header
     num_rows_read = 0
     for info in reader:
         Name = info[0]
-        Address = info[1]
-        Images = info[2]
+        Contact = info[1]
+        Address = info[2]
+        Size = info[3]
+        Rent = info[4]
+        PetPolicy = info[7]        
+        Gym = info[11]
+        Kitchen = info[12]
+        Amenities = info[13]
+        Features = info[14]
+        Space = info[15]
+        LeaseInfo = info[16]
+        Services = info[17]
+        PropertyInfo = info[18]
+        IndoorInfo = info[19]
+        OutdoorInfo = info[20]
+        Images = info[21]
+        Description = info[22]        
+
 
         num_rows_read += 1
         print ("reading %dth row for Apt" % (num_rows_read))
         #insert data into table: Apt
-        conn.cursor().execute('''INSERT IGNORE INTO Apt (Name, Address, Images)
-                                 VALUES (%s, %s, %s)''',
-                                 (Name, Address, Images))
+        conn.cursor().execute('''INSERT IGNORE INTO Apt (Name,Contact,Address,Size,Rent,PetPolicy,Gym,Kitchen,Amenities,Features,Space,LeaseInfo,Services,PropertyInfo,IndoorInfo,OutdoorInfo,Images,Description)
+                                 VALUES (%s, %s, %s, %s, %s, %s,%s, %s, %s,%s, %s, %s,s, %s, %s, %s, %s, %s,%s, %s, %s,%s, %s, %s)''',
+                                 (Name,Contact,Address,Size,Rent,PetPolicy,Gym,Kitchen,Amenities,Features,Space,LeaseInfo,Services,PropertyInfo,IndoorInfo,OutdoorInfo,Images,Description))
+
 
 
 #     ###process cleanapt.csv
