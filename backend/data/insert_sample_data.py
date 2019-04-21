@@ -202,5 +202,25 @@ with open("cleanapt.csv", encoding="utf8", errors='ignore') as f:
                                  VALUES (%s, %s, %s)''',
                                  (Name, Address, Images))
 
+
+#     ###process cleanapt.csv
+# with open("cleanapt.csv", encoding="utf8", errors='ignore') as f:
+#     reader = csv.reader(f)
+#     next(reader) # skip header
+#     num_rows_read = 0
+#     for info in reader:
+#         Name = info[0]
+#         Address = info[1]
+#         Images = info[2]
+
+#         num_rows_read += 1
+#         print ("reading %dth row for Apt" % (num_rows_read))
+#         #insert data into table: Apt
+#         conn.cursor().execute('''INSERT IGNORE INTO Apt (Name, Address, Images)
+#                                  VALUES (%s, %s, %s)''',
+#                                  (Name, Address, Images))
+
+
+
     conn.commit()
 conn.close()
