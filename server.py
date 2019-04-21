@@ -54,7 +54,7 @@ class Server(BaseHTTPRequestHandler):
         return response_content
 
     def respond(self):
-        conn = pymysql.connect(host='localhost', user='root', password='1459', database='cs6242')
+        conn = pymysql.connect(host='localhost', user='root', password='ramon555', database='cs6242')
         print("REST path : " + self.path)
         if self.path == '/favicon.ico':
             return
@@ -67,7 +67,7 @@ class Server(BaseHTTPRequestHandler):
     def handle_post_request(self):
         content_length = int(self.headers['Content-Length'])
         request = self.rfile.read(content_length).decode()
-        conn = pymysql.connect(host='localhost', user='root', password='1459', database='cs6242')
+        conn = pymysql.connect(host='localhost', user='root', password='ramon555', database='cs6242')
         if self.path == "/search":
             searchrequesthandler.handle_search_request(self, request, conn)
 
