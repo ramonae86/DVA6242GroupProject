@@ -55,7 +55,10 @@
 	 }
 	 console.log(page2_data);
 
-	 var order = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+	 var order = [];
+	 for(k=0;k<page2_data['addresses'].length;k++){
+	     order.push(k);
+	 }
 	 var shuffled_order = shuffle(order);
 	 console.log(shuffled_order);
 	 //for(var attribute in page2_data) {
@@ -387,7 +390,7 @@
 		 {
 		     var i = shuffled_order[k];
 		     console.log(i);
-		     document.write(i+1);
+		     document.write(k+1);
 		     var image;
 		     if(page2_data.images[i][0]==""){
 			 image = "img/no_image_icon.png";
