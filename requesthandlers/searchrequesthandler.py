@@ -8,8 +8,10 @@ def handle_search_request(base_request_handler, request, conn):
     post_data = json.loads(request)
 
     cur = conn.cursor()
-    search_word = post_data['search_word']
+    search_word = post_data['search_word'].strip(' ')
     file = open(os.getcwd() + "/data.js", 'w+')
+
+    zipcode = search_word
 
     if not search_word.isdigit():
         query = '''
@@ -20,11 +22,7 @@ def handle_search_request(base_request_handler, request, conn):
         cur.execute(query)
         rows = cur.fetchall()
         if rows and len(rows):
-            zipcode = rows[0][0]   
-    else:
-        zipcode = search_word
-    if not zipcode:
-        return
+            zipcode = rows[0][0]
 
     zipcode_line = 'var zipcode = "' + zipcode + '"'
     file.write(zipcode_line + "\n")
@@ -144,7 +142,7 @@ def handle_search_request(base_request_handler, request, conn):
     file.write(apt_scores_line + "\n\n")
     print("Apt names, addrsses, urls written to file.")
     school_infos = 'var school_infos = [' + ",".join(schools) + ']'
-    file.write(school_infos + "\n\n)
+    file.write(school_infos + "\n\n")
     print("School info written to file.")
 
 
