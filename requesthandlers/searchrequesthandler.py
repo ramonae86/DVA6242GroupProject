@@ -26,10 +26,13 @@ def handle_search_request(base_request_handler, request, conn):
 
     zipcode_line = 'var zipcode = "' + zipcode + '"'
     file.write(zipcode_line + "\n")
-    query = '''SELECT Name, Address, Images, Latitude, Longitude
+    query = '''SELECT Name, Address, Images, Latitude, Longitude,
+                Rent, Size, Contact, Pet, Description, Gym, Kitchen,
+                Amenities, Features, Lease, Services, PropertyInfo,
+                IndoorInfo, OutdoorInfo
                    FROM Apt
                    WHERE Address LIKE "%{}%"
-                   LIMIT 10;
+                   ;
                 '''.format(zipcode)
     cur.execute(query)
 
@@ -38,6 +41,20 @@ def handle_search_request(base_request_handler, request, conn):
     image_urls = []
     lats = []
     lngs = []
+    rent = []
+    size = []
+    contact = []
+    pet = []
+    description = []
+    gym = []
+    kitchen = []
+    amenities = []
+    features = []
+    lease = []
+    services = []
+    propertyinfo = []
+    indoorinfo = []
+    outdoorinfo = []
     rows = cur.fetchall()
     for row in rows:
         #apt_name = re.search(r'\[(.*?)\]', row[0]).group(1)
@@ -51,6 +68,20 @@ def handle_search_request(base_request_handler, request, conn):
         image_urls.append(image_url)
         lats.append(row[3])
         lngs.append(row[4])
+        rent.append('"' + removeLineBreak(row[5]) + '"')
+        size.append('"' + removeLineBreak(row[6]) + '"')
+        contact.append('"' + removeLineBreak(row[7]) + '"')
+        pet.append('"' + removeLineBreak(row[8]) + '"')
+        description.append('"' + removeLineBreak(row[9]) + '"')
+        gym.append('"' + removeLineBreak(row[10]) + '"')
+        kitchen.append('"' + removeLineBreak(row[11]) + '"')
+        amenities.append('"' + removeLineBreak(row[12]) + '"')
+        features.append('"' + removeLineBreak(row[13]) + '"')
+        lease.append('"' + removeLineBreak(row[14]) + '"')
+        services.append('"' + removeLineBreak(row[15]) + '"')
+        propertyinfo.append('"' + removeLineBreak(row[16]) + '"')
+        indoorinfo.append('"' + removeLineBreak(row[17]) + '"')
+        outdoorinfo.append('"' + removeLineBreak(row[18]) + '"')
 
 
     query = '''
@@ -140,11 +171,26 @@ def handle_search_request(base_request_handler, request, conn):
     file.write(apt_addresses_line + "\n\n")
     file.write(apt_images_line + "\n\n")
     file.write(apt_scores_line + "\n\n")
+
+    file.write('var rent = [' + ",".join(rent) + ']' + "\n\n")
+    file.write('var size = [' + ",".join(size) + ']' + "\n\n")
+    file.write('var contact = [' + ",".join(contact) + ']' + "\n\n")
+    file.write('var pet  = [' + ",".join(pet) + ']' + "\n\n")
+    file.write('var description = [' + ",".join(description) + ']' + "\n\n")
+    file.write('var gym = [' + ",".join(gym) + ']' + "\n\n")
+    file.write('var kitchen = [' + ",".join(kitchen) + ']' + "\n\n")
+    file.write('var amenities = [' + ",".join(amenities) + ']' + "\n\n")
+    file.write('var features = [' + ",".join(features) + ']' + "\n\n")
+    file.write('var lease = [' + ",".join(lease) + ']' + "\n\n")
+    file.write('var services = [' + ",".join(services) + ']' + "\n\n")
+    file.write('var propertyinfo = [' + ",".join(propertyinfo) + ']' + "\n\n")
+    file.write('var indoorinfo = [' + ",".join(indoorinfo) + ']' + "\n\n")
+    file.write('var outdoorinfo = [' + ",".join(outdoorinfo) + ']' + "\n\n")
+
     print("Apt names, addrsses, urls written to file.")
     school_infos = 'var school_infos = [' + ",".join(schools) + ']'
     file.write(school_infos + "\n\n")
     print("School info written to file.")
-
 
     file.close()
 
@@ -164,3 +210,6 @@ def getLatLng(address):
     lat = results['results'][0].get('geometry').get('location').get('lat')
     lng = results['results'][0].get('geometry').get('location').get('lng')
     return (str(lat), str(lng))
+
+def removeLineBreak(str):
+    return re.sub("\n|\r", "", str)
