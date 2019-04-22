@@ -54,11 +54,15 @@
 	     scores: score
 	 }
 	 console.log(page2_data);
-	 for(var attribute in page2_data) {
-	     //console.log(page2_data[attribute]);
-	     //shuffleArray(attribute[attribute]);
-	     page2_data[attribute]=shuffle(page2_data[attribute]);
-	 }
+
+	 var order = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+	 var shuffled_order = shuffle(order);
+	 console.log(shuffled_order);
+	 //for(var attribute in page2_data) {
+	 //console.log(page2_data[attribute]);
+	 //shuffleArray(attribute[attribute]);
+	 //page2_data[attribute]=shuffle(page2_data[attribute]);
+	 //}
 	 console.log(page2_data);
 	</script>
 	<link rel="stylesheet" type="text/css" href="styles1.css">
@@ -366,7 +370,7 @@
 		 
 	     }
 	    </script>
-	    </div>
+	</div>
 
 	<div id="result_list">
 	    <div class="ScrollStyle">
@@ -379,8 +383,10 @@
 
  		</div>
 		<script>
-		 for (i=0;i<page2_data.addresses.length;i++)
+		 for (k=0;k<page2_data['addresses'].length;k++)
 		 {
+		     var i = shuffled_order[k];
+		     console.log(i);
 		     document.write(i+1);
 		     var image;
 		     if(page2_data.images[i][0]==""){
@@ -399,7 +405,7 @@
 	    </div>
 	</div> <!-- end of row -->
 
-	    
+	
 	
 	<div id="map">
 	    <script>
@@ -408,13 +414,14 @@
 	     var map;
 	     var strings = [];
 
-	     for(i=0; i<page2_data.addresses.length;i++){
+	     for(k=0;k<page2_data['addresses'].length;k++){
+		 var i = shuffled_order[k];
 		 var string ='<div id="iw-container">' +
 	                     '<div class="iw-subTitle">Apartment Details</div>' +
 	                     '<div class="iw-content">' +
 	                     // '<div class="iw-subTitle">' + ratings[i] +'</div>' +
 	                     // '<a href='+ myurls[i]+'><img src=' + urls[i] + '></a> + ' + '<br>'+
-	                     '<a target="_blank" href="./Page3.html"><img src=' + apt_images[1][0] + ' height="120"><a>' + '<br>'+
+	                     '<img src=' + page2_data.images[i][0] + ' height="120">' + '<br>'+
 	                     // '<p>LLLL</p>' +
 	                     // '<div class="iw-subTitle">Details</div>' +
 	                     '<p> Score: ' + 
@@ -468,14 +475,6 @@
 			})
 	     }
 
-      function normalOpacity() {
-        return 0.5
-      }
-
-      function highlightedOpacity() {
-        return 1
-      }
-
 
 	     function normalIcon() {
 		 return 'img/marker_house_green.png'
@@ -493,27 +492,21 @@
 		 var marker = new google.maps.Marker({
 	             position: location,
 	             map: map,
-	             icon: normalIcon(),
-         		 opacity: normalOpacity()      
+	             icon: normalIcon()         
 		 });
 		 
 		 google.maps.event.addListener(map, "click", function(event) {
 	             infowindow.close();
 	             marker.setIcon(normalIcon());
-	             marker.setOpacity(normalOpacity());
 		 });
 
 		 marker.addListener('click', function () {
-	       for (var j = 0; j < apt_addresses.length; j++) {
+	             for (var j = 0; j < markers.length; j++) {
 			 markers[j].setIcon(normalIcon());
-			 markers[j].setOpacity(normalOpacity());
-
 			 infowindows[j].close(map, markers[j], strings[i])
-	       }
-	        marker.setIcon(highlightedIcon());
-	        marker.setOpacity(highlightedOpacity());
-
-	        infowindow.open(map, marker, strings[i]);
+	             }
+	             marker.setIcon(highlightedIcon());
+	             infowindow.open(map, marker, strings[i]);
 		 })
 
 		 infowindows.push(infowindow)
