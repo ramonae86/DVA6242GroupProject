@@ -36,7 +36,7 @@
 	     names: apt_names,
 	     addresses: apt_addresses,
 	     schools: school_infos,
-	     rent: apt_rent,
+	     rent: apt_price,
 	     size: apt_size,
 	     contact: apt_contact,
 	     pet: apt_pet,
@@ -44,19 +44,18 @@
 	     gym: apt_gym,
 	     kitchen: apt_kitchen,
 	     amenities: apt_amenities,
-	     feature: apt_feature,
 	     lease: apt_lease,
 	     services: apt_services,
 	     property: apt_property,
 	     indoor: apt_indoor,
 	     outdoor: apt_outdoor,
 	     images: apt_images,
-	     scores: score
+	     scores: apt_scores
 	 }
 	 console.log(page2_data);
 
 	 var order = [];
-	 for(k=0;k<page2_data['addresses'].length;k++){
+	 for(k=0;k<page2_data.addresses.length;k++){
 	     order.push(k);
 	 }
 	 var shuffled_order = shuffle(order);
@@ -386,11 +385,9 @@
 
  		</div>
 		<script>
-		 for (k=0;k<page2_data['addresses'].length;k++)
+		 for (k=0;k<page2_data.addresses.length;k++)
 		 {
 		     var i = shuffled_order[k];
-		     console.log(i);
-		     document.write(k+1);
 		     var image;
 		     if(page2_data.images[i][0]==""){
 			 image = "img/no_image_icon.png";
@@ -398,7 +395,7 @@
 			 image = page2_data.images[i][0];
 		     }
 		     var htmlcommands = "<a href='Page3.html?id="+i+"'><div class='panel' onmouseover='markers["+i+"].setIcon(highlightedIcon());' onmouseout='markers["+i+"].setIcon(normalIcon());' ><img src='" + image + "'>";
-		     htmlcommands += "<span><div class='panel_text1'>" + page2_data.names[i] + "</div><div class='panel_text2'>" + page2_data.addresses[i] + "</div></span>";
+		     htmlcommands += "<span><div class='panel_text1'><b>Name: </b>" + page2_data.names[i] + "</div><div class='panel_text2'><b>Address: </b>" + page2_data.addresses[i] + "</div><br><div class='panel_text2'><b>Ranking: </b>" + (k+1) + "</div></span>";
 		     htmlcommands += "</a></div>"
 		     document.write(htmlcommands);
 		 }
@@ -419,22 +416,22 @@
 
 	     for(k=0;k<page2_data['addresses'].length;k++){
 		 var i = shuffled_order[k];
-		 var string ='<div id="iw-container">' +
-	                     '<div class="iw-subTitle">Apartment Details</div>' +
-	                     '<div class="iw-content">' +
-	                     // '<div class="iw-subTitle">' + ratings[i] +'</div>' +
-	                     // '<a href='+ myurls[i]+'><img src=' + urls[i] + '></a> + ' + '<br>'+
-	                     '<img src=' + page2_data.images[i][0] + ' height="120">' + '<br>'+
-	                     // '<p>LLLL</p>' +
-	                     // '<div class="iw-subTitle">Details</div>' +
-	                     '<p> Score: ' + 
-	                     '<br>Ranking: ' + '/' + page2_data.addresses.length +
-	                     '<br>Rent: $' +
-	                     // '<br>Yelp link: ' + urls[i] + '</p>'+
-	                     // '<br><a target="_blank" href=' + myurls[i] + '>Click here to see more details</a>' + '</p>'+
-	                     '</div>' +
-	                     '<div class="iw-bottom-gradient"></div>' +
-	                     '</div>';
+		 var score_string = "Weight: "+page2_data.scores[i][0]+" Education: "+page2_data.scores[i][1]+" Environment: "+page2_data.scores[i][2]+" Safety: "+page2_data.scores[i][3];
+				    var string ='<div id="iw-container">' +
+						'<div class="iw-subTitle">Apartment Details</div>' +
+						'<div class="iw-content">' +
+						// '<div class="iw-subTitle">' + ratings[i] +'</div>' +
+						// '<a href='+ myurls[i]+'><img src=' + urls[i] + '></a> + ' + '<br>'+
+						'<img src=' + page2_data.images[i][0] + ' height="120">' +
+						// '<p>LLLL</p>' +
+						// '<div class="iw-subTitle">Details</div>' +
+						'<p><b>Score: </b>' + score_string + 
+						'<br><b>Rent: </b>' + page2_data.rent[i] + 
+						// '<br>Yelp link: ' + urls[i] + '</p>'+
+						// '<br><a target="_blank" href=' + myurls[i] + '>Click here to see more details</a>' + '</p>'+
+						'</div>' +
+						'<div class="iw-bottom-gradient"></div>' +
+						'</div>';
 
 		 strings.push(string);
 	     }
