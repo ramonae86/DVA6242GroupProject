@@ -414,7 +414,7 @@
 	                     '<div class="iw-content">' +
 	                     // '<div class="iw-subTitle">' + ratings[i] +'</div>' +
 	                     // '<a href='+ myurls[i]+'><img src=' + urls[i] + '></a> + ' + '<br>'+
-	                     '<img src=' + page2_data.images[i][0] + ' height="120">' + '<br>'+
+	                     '<a target="_blank" href="./Page3.html"><img src=' + apt_images[1][0] + ' height="120"><a>' + '<br>'+
 	                     // '<p>LLLL</p>' +
 	                     // '<div class="iw-subTitle">Details</div>' +
 	                     '<p> Score: ' + 
@@ -468,6 +468,14 @@
 			})
 	     }
 
+      function normalOpacity() {
+        return 0.5
+      }
+
+      function highlightedOpacity() {
+        return 1
+      }
+
 
 	     function normalIcon() {
 		 return 'img/marker_house_green.png'
@@ -485,21 +493,27 @@
 		 var marker = new google.maps.Marker({
 	             position: location,
 	             map: map,
-	             icon: normalIcon()         
+	             icon: normalIcon(),
+         		 opacity: normalOpacity()      
 		 });
 		 
 		 google.maps.event.addListener(map, "click", function(event) {
 	             infowindow.close();
 	             marker.setIcon(normalIcon());
+	             marker.setOpacity(normalOpacity());
 		 });
 
 		 marker.addListener('click', function () {
-	             for (var j = 0; j < markers.length; j++) {
+	       for (var j = 0; j < apt_addresses.length; j++) {
 			 markers[j].setIcon(normalIcon());
+			 markers[j].setOpacity(normalOpacity());
+
 			 infowindows[j].close(map, markers[j], strings[i])
-	             }
-	             marker.setIcon(highlightedIcon());
-	             infowindow.open(map, marker, strings[i]);
+	       }
+	        marker.setIcon(highlightedIcon());
+	        marker.setOpacity(highlightedOpacity());
+
+	        infowindow.open(map, marker, strings[i]);
 		 })
 
 		 infowindows.push(infowindow)
