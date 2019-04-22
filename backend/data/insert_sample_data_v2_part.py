@@ -27,9 +27,13 @@ conn.cursor().execute('''CREATE TABLE Apt (
                            OutdoorInfo varchar(200),
                            Images varchar(1000),
                            Description varchar(100),
+<<<<<<< HEAD
                            Latitude varchar(10),
                            Longitude varchar(10),
                            PRIMARY KEY(AptID)
+=======
+                           PRIMARY KEY (AptID)
+>>>>>>> 33a83df499a53fcfbb8e5d10ba0c8ad9c97f028e
                          )''')
 
 # conn.cursor().execute('''CREATE TABLE Apt (
@@ -45,9 +49,14 @@ conn.commit()
 # Option Name,Contact,Address,Size,Rent,Monthly Fees,One Time Fees,Pet Policy,Distance,Duration,Parking,
 # Gym,Kitchen,Amenities,Features,Living Space,Lease Info,Services,Property Info,Indoor Info,Outdoor Info,Images,Description
 with open("cleanapt_new.csv", encoding="utf8", errors='ignore') as f:
+<<<<<<< HEAD
 #f = open("data/cleanapt_new.csv", encoding="utf8", errors='ignore')
     reader = csv.reader(f)
     next(reader)
+=======
+    reader = csv.reader(f)
+    next(reader) # skip header
+>>>>>>> 33a83df499a53fcfbb8e5d10ba0c8ad9c97f028e
     num_rows_read = 0
     for info in reader:
         Name = info[0]
